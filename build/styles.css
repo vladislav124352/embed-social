@@ -875,6 +875,7 @@ div {
 .section-gray {
 	background-color: #eef1f7;
 }
+
 .title {
 	font-size: 56px;
 	font-weight: 900;
@@ -939,6 +940,24 @@ div {
 	margin-right: 15px;
 }
 
+/* SECTION: BENEFITS-1 */
+
+.benefits-social_item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 230px;
+	height: 182px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 12px #d8d8d8;
+	margin-right: 20px;
+}
+
+.benefits-social_item:last-child {
+	margin: 0;
+}
 
 /* ANYWHERE */
 
