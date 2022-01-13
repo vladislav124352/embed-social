@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a,
+input,
+button {
+	outline: none;
+}
+
+div {
+	width: fit-content;
+	width: -moz-available;
+}
+
+/* HEADER */
+
+.header-nav_item {
+	display: flex;
+	align-items: center;
+	margin-right: 30px;
+}
+
