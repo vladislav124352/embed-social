@@ -607,6 +607,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-\[700px\]{
   max-width: 700px;
 }
+.max-w-\[580px\]{
+  max-width: 580px;
+}
 .max-w-\[471px\]{
   max-width: 471px;
 }
@@ -765,11 +768,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-bold{
   font-weight: 700;
 }
-.font-medium{
-  font-weight: 500;
-}
 .font-normal{
   font-weight: 400;
+}
+.font-medium{
+  font-weight: 500;
 }
 .uppercase{
   text-transform: uppercase;
