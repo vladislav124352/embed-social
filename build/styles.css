@@ -847,6 +847,21 @@ div {
 	width: -moz-available;
 }
 
+/* CONTAINERS */
+
+.header-container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1331px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 /* HEADER */
 
 .header-nav_item {
@@ -855,3 +870,53 @@ div {
 	margin-right: 30px;
 }
 
+/* SECTIONS */
+
+.title {
+	font-size: 56px;
+	font-weight: 900;
+	line-height: 60px;
+}
+
+.title-md {
+	font-weight: 900;
+	line-height: 60px;
+	font-size: 48px;
+}
+
+/* SECTION: HERO */
+
+.section-hero {
+	background: linear-gradient(180deg, rgba(214, 218, 228, 0) 0%, rgba(214, 218, 228, 0.2) 100%);
+}
+
+.freeTrial_dot {
+	width: 5px;
+	height: 5px;
+	margin: 0 10px;
+	border-radius: 100%;
+	background-color: black;
+}
+
+.partner {
+	margin-right: 46px;
+}
+
+.partner:last-child {
+	margin: 0;
+}
+
+
+/* ANYWHERE */
+
+.font-maxbold {
+	font-weight: 900;
+}
+
+.small-caps {
+	font-variant-caps: small-caps;
+}
+
+.markable {
+	padding: 0 5px;
+}
