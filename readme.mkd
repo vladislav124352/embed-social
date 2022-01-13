@@ -1,0 +1,10 @@
+# Welcome to Embed Social Landing Page!
+
+This landing page was made by Angela Ristovska from figma - https://www.figma.com/@changela.
+Thank you very much, Angela :) I hope you enjoy this project, because I worked very, very hard on it.
+
+## So I used:
+
+- HTML5/CSS3
+- [Tailwind.css](https://tailwindcss.com)
+- [Scrolling Reveal](https://scrollrevealjs.org/)
