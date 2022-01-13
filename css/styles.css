@@ -40,10 +40,20 @@ div {
 
 /* SECTIONS */
 
+.section-gray {
+	background-color: #eef1f7;
+}
+
 .title {
 	font-size: 56px;
 	font-weight: 900;
 	line-height: 60px;
+}
+
+.title-md {
+	font-weight: 900;
+	line-height: 60px;
+	font-size: 48px;
 }
 
 /* SECTION: HERO */
@@ -66,6 +76,36 @@ div {
 
 .partner:last-child {
 	margin: 0;
+}
+
+/* SECTION: ABOUT */
+
+.about-widget_item {
+	max-width: 320px;
+	margin-bottom: 10px;
+	height: 70px;
+}
+
+.widget-item_btn {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 15px;
+	border-radius: 5px;
+	color: #9ca0ac;
+	font-size: 20px;
+	font-weight: 500;
+	height: 100%;
+}
+
+.widget-item_btn:hover {
+	background-color: #f8f8f8;
+	transition: all 150ms ease-in-out;
+}
+
+.item-btn_icon {
+	margin-right: 15px;
 }
 
 /* ANYWHERE */
