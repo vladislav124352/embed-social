@@ -10,6 +10,9 @@ module.exports = {
         body: ['Roboto']
       }
     },
+    screens: {
+      xl: '1900px'
+    }
   },
   plugins: [],
 }

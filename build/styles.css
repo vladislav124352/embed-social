@@ -432,34 +432,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .container{
   width: 100%;
 }
-@media (min-width: 640px){
+@media (min-width: 1900px){
 
   .container{
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px){
-
-  .container{
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px){
-
-  .container{
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px){
-
-  .container{
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px){
-
-  .container{
-    max-width: 1536px;
+    max-width: 1900px;
   }
 }
 .absolute{
@@ -1279,6 +1255,19 @@ div {
 	max-height: 36px;
 }
 
+/* SECTION: CTA */
+
+.cta_card {
+	box-shadow: 4px 4px 20px #9ca0accc;
+	margin-right: 20px;
+	border-radius: 10px;
+	width: 270px;
+	height: 385px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /* ANYWHERE */
 
 .font-maxbold {
@@ -1335,4 +1324,32 @@ div {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 24px;
+}
+
+@media (min-width: 1900px){
+
+  .xl\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .xl\:mr-\[80px\]{
+    margin-right: 80px;
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
+  .xl\:items-start{
+    align-items: flex-start;
+  }
+
+  .xl\:pb-\[44px\]{
+    padding-bottom: 44px;
+  }
+
+  .xl\:text-left{
+    text-align: left;
+  }
 }

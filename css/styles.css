@@ -75,7 +75,7 @@ div {
 /* SECTION: HERO */
 
 .section-hero {
-	background: linear-gradient(180deg, rgba(214, 218, 228, 0) 0%, rgba(214, 218, 228, 0.2) 100%);
+	background: linear-gradient(180deg, #d6dae400 0%, #d6dae420 100%);
 }
 
 .freeTrial_dot {
@@ -303,6 +303,19 @@ div {
 
 .platform img {
 	max-height: 36px;
+}
+
+/* SECTION: CTA */
+
+.cta_card {
+	box-shadow: 4px 4px 20px #9ca0accc;
+	margin-right: 20px;
+	border-radius: 10px;
+	width: 270px;
+	height: 385px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* ANYWHERE */
