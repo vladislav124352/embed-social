@@ -872,9 +872,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .uppercase{
   text-transform: uppercase;
 }
-.leading-\[24px\]{
-  line-height: 24px;
-}
 .leading-\[19px\]{
   line-height: 19px;
 }
@@ -1117,7 +1114,7 @@ div {
 	margin-right: 20px;
 }
 
-.card_title {
+.benefits-card_title {
 	font-weight: 900;
 	font-size: 32px;
 	line-height: 37px;
