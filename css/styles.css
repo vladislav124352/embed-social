@@ -96,6 +96,7 @@ div {
 	max-width: 320px;
 	margin-bottom: 10px;
 	height: 70px;
+	color: #9ca0ac;
 }
 
 .widget-item_btn {
@@ -105,19 +106,32 @@ div {
 	justify-content: flex-start;
 	padding: 15px;
 	border-radius: 5px;
-	color: #9ca0ac;
+	color: inherit;
+	fill: inherit;
 	font-size: 20px;
 	font-weight: 500;
 	height: 100%;
 }
 
 .widget-item_btn:hover {
-	background-color: #f8f8f8;
+	background-color: #0000000f;
 	transition: all 150ms ease-in-out;
 }
 
 .item-btn_icon {
 	margin-right: 15px;
+}
+
+.about-widget_item_active {
+	color: #0066ff !important;
+}
+
+.about-widget_item_active button {
+	background-color: #0066ff15;
+}
+
+.about-widget_item_active .rect_active {
+	fill: #0066ff;
 }
 
 /* SECTION: BENEFITS-1 */
@@ -137,6 +151,45 @@ div {
 
 .benefits-social_item:last-child {
 	margin: 0;
+}
+
+/* SECTION: BENEFITS-2 */
+
+.benefits-2_card {
+	width: 100%;
+	height: 100%;
+	max-width: 420px;
+	max-height: 218px;
+	background-color: #eef1f7;
+	border-radius: 10px;
+	padding: 20px;
+	margin-right: 20px;
+}
+
+.card_title {
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 37px;
+	margin-bottom: 30px;
+}
+
+.card_description {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.card_iconBlock {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 10px;
+}
+
+.iconBlock_text {
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 28px;
 }
 
 /* ANYWHERE */
