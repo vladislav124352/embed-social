@@ -975,3 +975,16 @@ div {
 .markable {
 	padding: 0 5px;
 }
+
+.btn-blue {
+	padding: 15px 16px;
+	background-color: #0066ff;
+	border-radius: 3px;
+}
+
+.btn-blue p {
+	line-height: 20px;
+	font-size: 15px;
+	font-weight: 700;
+	color: white;
+}
