@@ -44,6 +44,10 @@ div {
 	background-color: #eef1f7;
 }
 
+.section-dark {
+	background-color: #111827;
+}
+
 .title {
 	font-size: 56px;
 	font-weight: 900;
@@ -190,6 +194,75 @@ div {
 	font-weight: 900;
 	font-size: 24px;
 	line-height: 28px;
+}
+
+/* SECTION: TEMPLATES */
+
+.template_card {
+	max-width: 310px;
+	min-height: 374px;
+	width: 100%;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+
+.template-card_btn {
+	background-color: white;
+	user-select: none;
+	border-radius: 10px;
+	height: 374px;
+	width: 100%;
+}
+
+.template_card:last-child {
+	margin: 0;
+}
+
+.template-card_preview,
+.template-card_preview img {
+	border-start-start-radius: 10px;
+	border-start-end-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.template-card_description {
+	padding: 20px;
+	padding-right: 30px;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.template-card_title {
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 37.5px;
+	margin-bottom: 10px;
+}
+
+.carousel_ellipse {
+	border-radius: 100%;
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+}
+
+.ellipse_btn {
+	border: 1px solid white;
+	background: transparent;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+}
+
+.carousel_ellipse:last-child {
+	margin: 0;
+}
+
+.carousel_ellipse_active button {
+	background-color: white !important;
 }
 
 /* ANYWHERE */
