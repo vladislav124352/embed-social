@@ -891,6 +891,18 @@ div {
 	font-size: 48px;
 }
 
+.title-small {
+	font-weight: 900;
+	line-height: 56px;
+	font-size: 48px;
+}
+
+.title-large {
+	font-weight: 900;
+	line-height: 66px;
+	font-size: 56px;
+}
+
 /* SECTION: HERO */
 
 .section-hero {
