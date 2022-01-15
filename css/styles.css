@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900');
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
 
 @tailwind base;
@@ -340,6 +341,41 @@ div {
 	font-size: 22px;
 	line-height: 26px;
 	font-weight: 900;
+}
+
+/* SECTION: SOCIAL PROOF VIDEO */
+
+.play-triangle {
+	position: relative;
+	background-color: white;
+	text-align: left;
+}
+.play-triangle:before,
+.play-triangle:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+.play-triangle,
+.play-triangle:before,
+.play-triangle:after {
+	width: 10em;
+	height: 10em;
+	border-top-right-radius: 30%;
+}
+
+.play-triangle {
+	transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
+}
+.play-triangle:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%);
+}
+.play-triangle:after {
+	transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+}
+
+.play-wrapper {
+	transform: rotate(90deg) scale(0.2);
 }
 
 /* ANYWHERE */
