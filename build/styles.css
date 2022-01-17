@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900');
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /*
 ! tailwindcss v3.0.13 | MIT License | https://tailwindcss.com
@@ -579,6 +580,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-\[15px\]{
   margin-bottom: 15px;
 }
+.mb-\[75px\]{
+  margin-bottom: 75px;
+}
 .box-content{
   box-sizing: content-box;
 }
@@ -834,6 +838,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-\[4px\]{
   border-width: 4px;
 }
+.border-\[1px\]{
+  border-width: 1px;
+}
 .border-solid{
   border-style: solid;
 }
@@ -923,6 +930,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-\[12px\]{
   padding: 12px;
 }
+.p-\[5px\]{
+  padding: 5px;
+}
 .px-\[10px\]{
   padding-left: 10px;
   padding-right: 10px;
@@ -958,6 +968,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-\[25px\]{
   padding-top: 25px;
   padding-bottom: 25px;
+}
+.py-\[18px\]{
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.px-\[30px\]{
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .pt-\[10px\]{
   padding-top: 10px;
@@ -1043,6 +1061,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[36px\]{
   font-size: 36px;
 }
+.text-\[24px\]{
+  font-size: 24px;
+}
 .font-normal{
   font-weight: 400;
 }
@@ -1070,9 +1091,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .leading-\[26px\]{
   line-height: 26px;
 }
-.leading-\[28px\]{
-  line-height: 28px;
-}
 .leading-\[23px\]{
   line-height: 23px;
 }
@@ -1087,6 +1105,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .leading-\[36px\]{
   line-height: 36px;
+}
+.leading-\[28px\]{
+  line-height: 28px;
 }
 .text-white{
   --tw-text-opacity: 1;
@@ -1108,9 +1129,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(104 46 230 / var(--tw-text-opacity));
 }
+.text-\[\#00000069\]{
+  color: #00000069;
+}
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+.line-through{
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
 }
 .shadow-\[0_0_20px_\#00000010\]{
   --tw-shadow: 0 0 20px #00000010;
@@ -1607,6 +1635,133 @@ div {
 	font-weight: 400;
 }
 
+/* SECTION: PRICING */
+
+.price_card {
+	position: relative;
+	background: #ffffff;
+	border: 1px solid #d6dae4;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 30px;
+	height: 553px;
+	margin-right: 10px;
+	z-index: 2;
+}
+
+.price_card:last-child {
+	margin: 0;
+}
+
+.card_name {
+	font-size: 28px;
+	line-height: 30px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.price_card .card_price {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+	font-family: 'Poppins';
+	margin-bottom: 40px;
+}
+
+.price_cost {
+	font-size: 48px;
+	line-height: 42px;
+}
+
+.card_button {
+	border: 2px solid #0066ff;
+	box-sizing: border-box;
+	border-radius: 3px;
+	padding: 15px;
+	font-size: 16px;
+	line-height: 17px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #0066ff;
+	width: 100%;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+.card_button_selected {
+	background-color: #0066ff;
+	color: white;
+}
+
+.card_selected {
+	position: absolute;
+	left: -1px;
+	top: -38px;
+	height: 590px;
+	width: 101%;
+	border-radius: 10px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	border: 4px solid #0066ff;
+	z-index: -1;
+}
+
+.selected_header {
+	height: 38px;
+	width: 100%;
+	background-color: #0066ff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+}
+
+.selected_header p {
+	font-size: 14px;
+	line-height: 16px;
+	color: white;
+	font-weight: 700;
+	margin-bottom: 2px;
+}
+
+.pricing_question {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.pricing_question details {
+	transition: all 100ms ease-in-out;
+	border-bottom: 2px solid #d6dae4;
+	padding-bottom: 20px;
+}
+
+.pricing_question details[open] > summary > svg {
+	transition: all 100ms ease-in-out;
+	transform: rotate(180deg);
+}
+
+.pricing_question details summary {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.question_name {
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.question_answer {
+	padding-top: 15px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
 /* ANYWHERE */
 
 .font-maxbold {
@@ -1663,6 +1818,12 @@ div {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 24px;
+}
+
+.text-description-md {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
 }
 
 .hover\:bg-black\/10:hover{
