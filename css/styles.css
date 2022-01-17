@@ -582,6 +582,34 @@ div {
 	line-height: 24px;
 }
 
+/* SECTINO: FOOTER */
+
+.footer_block {
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	display: flex;
+	margin-right: 50px;
+}
+
+.footer_block:last-child {
+	margin: 0;
+}
+
+.block_name {
+	font-weight: 800;
+	font-size: 18px;
+	margin-bottom: 18px;
+}
+
+.block-list_item {
+	line-height: 22px;
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 8px;
+	color: #d8d8d8;
+}
+
 /* ANYWHERE */
 
 .font-maxbold {
