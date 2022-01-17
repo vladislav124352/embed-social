@@ -756,6 +756,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-\[608px\]{
   max-width: 608px;
 }
+.max-w-\[830px\]{
+  max-width: 830px;
+}
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -893,9 +896,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-gradient-to-tr{
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
+.bg-gradient-to-t{
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
 .from-\[\#F9ED32\]{
   --tw-gradient-from: #F9ED32;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(249 237 50 / 0));
+}
+.from-white{
+  --tw-gradient-from: #fff;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 255 255 / 0));
 }
 .via-\[\#EE2A7B\]{
   --tw-gradient-stops: var(--tw-gradient-from), #EE2A7B, var(--tw-gradient-to, rgb(238 42 123 / 0));
@@ -1064,6 +1074,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[24px\]{
   font-size: 24px;
 }
+.text-\[48px\]{
+  font-size: 48px;
+}
 .font-normal{
   font-weight: 400;
 }
@@ -1072,6 +1085,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .font-medium{
   font-weight: 500;
+}
+.font-extrabold{
+  font-weight: 800;
 }
 .uppercase{
   text-transform: uppercase;
@@ -1108,6 +1124,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .leading-\[28px\]{
   line-height: 28px;
+}
+.leading-\[60px\]{
+  line-height: 60px;
 }
 .text-white{
   --tw-text-opacity: 1;
