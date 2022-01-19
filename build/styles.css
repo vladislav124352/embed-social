@@ -1033,13 +1033,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 16px;
   padding-right: 16px;
 }
-.py-\[150px\]{
-  padding-top: 150px;
-  padding-bottom: 150px;
+.py-\[100px\]{
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .py-\[80px\]{
   padding-top: 80px;
   padding-bottom: 80px;
+}
+.py-\[150px\]{
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 .px-\[172px\]{
   padding-left: 172px;
@@ -1068,10 +1072,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-\[30px\]{
   padding-left: 30px;
   padding-right: 30px;
-}
-.py-\[100px\]{
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 .pt-\[50px\]{
   padding-top: 50px;
@@ -2189,6 +2189,11 @@ div {
 
   .\32xs\:max-w-\[370px\]{
     max-width: 370px;
+  }
+
+  .\32xs\:py-\[150px\]{
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
 
