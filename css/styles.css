@@ -220,12 +220,66 @@ div {
 	color: #0066ff !important;
 }
 
+.about-widget_item_active:hover button {
+	background-color: #0066ff15;
+}
+
 .about-widget_item_active button {
 	background-color: #0066ff15;
 }
 
 .about-widget_item_active .rect_active {
 	fill: #0066ff;
+}
+
+@media screen and (max-width: 1400px) {
+	.about-widget_item {
+		margin: 5px;
+	}
+
+	.widget-item_btn {
+		font-size: 18px;
+		padding: 5px 15px;
+	}
+
+	.item-btn_icon {
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.about-widget_item {
+		height: auto;
+	}
+
+	.widget-item_btn {
+		font-size: 16px;
+		padding: 5px 10px;
+	}
+
+	.item-btn_icon {
+		margin-right: 10px;
+		width: 28px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.about-widget_item {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.widget-item_btn {
+		font-size: 15px;
+		width: 100%;
+		justify-content: space-between;
+		background: #0000000a;
+	}
+
+	.item-btn_icon {
+		margin-right: 8px;
+		width: 25px;
+	}
 }
 
 /* SECTION: BENEFITS-1 */

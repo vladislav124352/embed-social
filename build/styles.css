@@ -556,11 +556,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-\[25px\]{
   margin-bottom: 25px;
 }
-.mr-\[50px\]{
-  margin-right: 50px;
-}
-.mb-\[30px\]{
-  margin-bottom: 30px;
+.mb-\[40px\]{
+  margin-bottom: 40px;
 }
 .mb-\[70px\]{
   margin-bottom: 70px;
@@ -582,6 +579,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mb-\[150px\]{
   margin-bottom: 150px;
+}
+.mb-\[30px\]{
+  margin-bottom: 30px;
 }
 .mr-\[40px\]{
   margin-right: 40px;
@@ -618,9 +618,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mr-\[178px\]{
   margin-right: 178px;
-}
-.mb-\[40px\]{
-  margin-bottom: 40px;
 }
 .mb-\[15px\]{
   margin-bottom: 15px;
@@ -759,8 +756,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-\[600px\]{
   max-width: 600px;
 }
-.max-w-\[900px\]{
-  max-width: 900px;
+.max-w-full{
+  max-width: 100%;
 }
 .max-w-\[781px\]{
   max-width: 781px;
@@ -839,8 +836,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-col{
   flex-direction: column;
 }
+.flex-col-reverse{
+  flex-direction: column-reverse;
+}
 .flex-wrap{
   flex-wrap: wrap;
+}
+.flex-nowrap{
+  flex-wrap: nowrap;
 }
 .items-start{
   align-items: flex-start;
@@ -1506,12 +1509,66 @@ div {
 	color: #0066ff !important;
 }
 
+.about-widget_item_active:hover button {
+	background-color: #0066ff15;
+}
+
 .about-widget_item_active button {
 	background-color: #0066ff15;
 }
 
 .about-widget_item_active .rect_active {
 	fill: #0066ff;
+}
+
+@media screen and (max-width: 1400px) {
+	.about-widget_item {
+		margin: 5px;
+	}
+
+	.widget-item_btn {
+		font-size: 18px;
+		padding: 5px 15px;
+	}
+
+	.item-btn_icon {
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.about-widget_item {
+		height: auto;
+	}
+
+	.widget-item_btn {
+		font-size: 16px;
+		padding: 5px 10px;
+	}
+
+	.item-btn_icon {
+		margin-right: 10px;
+		width: 28px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.about-widget_item {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.widget-item_btn {
+		font-size: 15px;
+		width: 100%;
+		justify-content: space-between;
+		background: #0000000a;
+	}
+
+	.item-btn_icon {
+		margin-right: 8px;
+		width: 25px;
+	}
 }
 
 /* SECTION: BENEFITS-1 */
@@ -2106,6 +2163,14 @@ div {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:flex-wrap{
+    flex-wrap: wrap;
+  }
+
   .md\:text-\[16px\]{
     font-size: 16px;
   }
@@ -2142,6 +2207,10 @@ div {
 
   .xmd\:max-w-full{
     max-width: 100%;
+  }
+
+  .xmd\:max-w-\[900px\]{
+    max-width: 900px;
   }
 
   .xmd\:scale-95{
@@ -2183,6 +2252,18 @@ div {
     margin-bottom: 0px;
   }
 
+  .xl\:mr-\[50px\]{
+    margin-right: 50px;
+  }
+
+  .xl\:mb-\[30px\]{
+    margin-bottom: 30px;
+  }
+
+  .xl\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .xl\:mr-\[80px\]{
     margin-right: 80px;
   }
@@ -2191,8 +2272,16 @@ div {
     flex-direction: row;
   }
 
+  .xl\:flex-col{
+    flex-direction: column;
+  }
+
   .xl\:items-start{
     align-items: flex-start;
+  }
+
+  .xl\:justify-start{
+    justify-content: flex-start;
   }
 
   .xl\:pb-\[44px\]{

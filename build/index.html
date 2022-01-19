@@ -774,12 +774,16 @@
             </div>
         </section>
         <section id="about">
-            <div class="container py-[160px] flex items-start justify-between">
-                <img class="max-w-[900px] rounded-[12px] mr-[50px]" src="../assets/about/foodie-image.png"
-                    alt="Widgets example" />
-                <div class="flex flex-col items-start justify-start">
-                    <h2 class="title-small mb-[30px]">Widgets for every website.</h2>
-                    <ul class="flex flex-col">
+            <div class="container py-[160px] flex flex-col-reverse 
+                justify-between items-center xl:items-start xl:flex-row">
+                <img class="max-w-full rounded-[12px] mr-0 xl:mr-[50px] xmd:max-w-[900px]" alt="Widgets example"
+                    src="../assets/about/foodie-image.png" />
+                <div class="flex flex-col items-center justify-center xl:justify-start xl:items-start">
+                    <h2 class="text-center title-small mb-[25px] xl:text-left xl:mb-[30px]">
+                        Widgets for every website.
+                    </h2>
+                    <ul class="flex flex-nowrap flex-col w-full justify-center items-center
+                        mb-[40px] md:flex-wrap md:flex-row xl:flex-col xl:mb-0 xl:items-start">
                         <li class="about-widget_item">
                             <button class="widget-item_btn">
                                 <svg class="item-btn_icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
