@@ -1590,6 +1590,22 @@ div {
 	margin: 0;
 }
 
+@media screen and (max-width: 1400px) {
+	.benefits-social_item {
+		margin: 10px;
+	}
+
+	.benefits-social_item:last-child {
+		margin: 10px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.benefits-social_item {
+		width: 100%;
+	}
+}
+
 /* SECTION: BENEFITS-2 */
 
 .benefits-2_card {
@@ -2125,6 +2141,10 @@ div {
 }
 
 @media (min-width: 500px){
+
+  .\32xs\:w-auto{
+    width: auto;
+  }
 
   .\32xs\:min-w-\[250px\]{
     min-width: 250px;
