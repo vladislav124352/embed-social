@@ -22,9 +22,17 @@ div {
 .container {
 	width: 100%;
 	margin: 0 auto;
-	max-width: 1331px;
-	padding-left: 15px;
-	padding-right: 15px;
+	max-width: 1361px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 1331px;
+	}
 }
 
 /* HEADER */
@@ -69,6 +77,60 @@ div {
 	font-size: 56px;
 }
 
+@media screen and (max-width: 1100px) {
+	.title {
+		font-size: 50px;
+	}
+
+	.title-md {
+		font-size: 42px;
+	}
+
+	.title-small {
+		font-size: 42px;
+	}
+
+	.title-large {
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.title {
+		font-size: 46px;
+	}
+
+	.title-md {
+		font-size: 38px;
+	}
+
+	.title-small {
+		font-size: 38px;
+	}
+
+	.title-large {
+		font-size: 46px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.title {
+		font-size: 42px;
+	}
+
+	.title-md {
+		font-size: 34px;
+	}
+
+	.title-small {
+		font-size: 34px;
+	}
+
+	.title-large {
+		font-size: 42px;
+	}
+}
+
 /* SECTION: HERO */
 
 .section-hero {
@@ -89,6 +151,20 @@ div {
 
 .partner:last-child {
 	margin: 0;
+}
+
+@media screen and (max-width: 1100px) {
+	.partner {
+		margin: 10px 20px 10px 20px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.freeTrial_dot {
+		width: 4px;
+		height: 4px;
+		margin: 0 8px;
+	}
 }
 
 /* SECTION: ABOUT */
@@ -672,4 +748,14 @@ div {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 28px;
+}
+
+@media screen and (max-width: 700px) {
+	.text-description {
+		font-size: 16px;
+	}
+
+	.text-description-md {
+		font-size: 16px;
+	}
 }

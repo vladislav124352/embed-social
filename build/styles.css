@@ -434,6 +434,42 @@ Ensure the default browser behavior of the `hidden` attribute.
 .container{
   width: 100%;
 }
+@media (min-width: 500px){
+
+  .container{
+    max-width: 500px;
+  }
+}
+@media (min-width: 700px){
+
+  .container{
+    max-width: 700px;
+  }
+}
+@media (min-width: 900px){
+
+  .container{
+    max-width: 900px;
+  }
+}
+@media (min-width: 1100px){
+
+  .container{
+    max-width: 1100px;
+  }
+}
+@media (min-width: 1200px){
+
+  .container{
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1400px){
+
+  .container{
+    max-width: 1400px;
+  }
+}
 @media (min-width: 1900px){
 
   .container{
@@ -487,6 +523,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-\[20px\]{
   margin-right: 20px;
 }
+.mb-\[5px\]{
+  margin-bottom: 5px;
+}
+.mt-\[30px\]{
+  margin-top: 30px;
+}
+.mr-0{
+  margin-right: 0px;
+}
 .ml-\[5px\]{
   margin-left: 5px;
 }
@@ -499,9 +544,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-\[9px\]{
   margin-right: 9px;
 }
-.mb-\[5px\]{
-  margin-bottom: 5px;
-}
 .mt-\[15px\]{
   margin-top: 15px;
 }
@@ -511,8 +553,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-\[75px\]{
   margin-top: 75px;
 }
-.mb-\[20px\]{
-  margin-bottom: 20px;
+.mb-\[25px\]{
+  margin-bottom: 25px;
 }
 .mr-\[50px\]{
   margin-right: 50px;
@@ -522,6 +564,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mb-\[70px\]{
   margin-bottom: 70px;
+}
+.mb-\[20px\]{
+  margin-bottom: 20px;
 }
 .mb-\[80px\]{
   margin-bottom: 80px;
@@ -592,11 +637,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .grid{
   display: grid;
 }
+.hidden{
+  display: none;
+}
 .h-\[46\.5px\]{
   height: 46.5px;
 }
 .h-full{
   height: 100%;
+}
+.h-\[4px\]{
+  height: 4px;
 }
 .h-\[42px\]{
   height: 42px;
@@ -639,6 +690,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-full{
   width: 100%;
+}
+.w-\[32px\]{
+  width: 32px;
 }
 .w-fit{
   width: -webkit-fit-content;
@@ -684,20 +738,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[171px\]{
   width: 171px;
 }
-.min-w-\[250px\]{
-  min-width: 250px;
+.min-w-\[200px\]{
+  min-width: 200px;
 }
-.min-w-\[156px\]{
-  min-width: 156px;
+.min-w-\[60px\]{
+  min-width: 60px;
 }
 .max-w-\[700px\]{
   max-width: 700px;
 }
-.max-w-\[580px\]{
-  max-width: 580px;
+.max-w-\[320px\]{
+  max-width: 320px;
 }
 .max-w-\[471px\]{
   max-width: 471px;
+}
+.max-w-\[300px\]{
+  max-width: 300px;
+}
+.max-w-\[600px\]{
+  max-width: 600px;
 }
 .max-w-\[900px\]{
   max-width: 900px;
@@ -762,6 +822,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-\[360px\]{
   max-width: 360px;
 }
+.scale-90{
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -773,6 +838,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .flex-col{
   flex-direction: column;
+}
+.flex-wrap{
+  flex-wrap: wrap;
 }
 .items-start{
   align-items: flex-start;
@@ -794,6 +862,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .gap-\[20px\]{
   gap: 20px;
+}
+.rounded-\[4px\]{
+  border-radius: 4px;
 }
 .rounded-\[5px\]{
   border-radius: 5px;
@@ -861,6 +932,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-color: rgb(214 218 228 / var(--tw-border-opacity));
 }
+.bg-black\/80{
+  background-color: rgb(0 0 0 / 0.8);
+}
 .bg-\[\#0066FF\]{
   --tw-bg-opacity: 1;
   background-color: rgb(0 102 255 / var(--tw-bg-opacity));
@@ -925,9 +999,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-\[2\.4px\]{
   padding: 2.4px;
 }
-.p-\[15px_16px\]{
-  padding: 15px 16px;
-}
 .p-\[9px\]{
   padding: 9px;
 }
@@ -949,6 +1020,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-\[10px\]{
   padding-left: 10px;
   padding-right: 10px;
+}
+.py-\[15px\]{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.px-\[16px\]{
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .py-\[160px\]{
   padding-top: 160px;
@@ -1057,6 +1136,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[15px\]{
   font-size: 15px;
 }
+.text-\[14px\]{
+  font-size: 14px;
+}
 .text-\[16px\]{
   font-size: 16px;
 }
@@ -1068,9 +1150,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-\[22px\]{
   font-size: 22px;
-}
-.text-\[14px\]{
-  font-size: 14px;
 }
 .text-\[62px\]{
   font-size: 62px;
@@ -1231,9 +1310,17 @@ div {
 .container {
 	width: 100%;
 	margin: 0 auto;
-	max-width: 1331px;
-	padding-left: 15px;
-	padding-right: 15px;
+	max-width: 1361px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 1331px;
+	}
 }
 
 /* HEADER */
@@ -1278,6 +1365,60 @@ div {
 	font-size: 56px;
 }
 
+@media screen and (max-width: 1100px) {
+	.title {
+		font-size: 50px;
+	}
+
+	.title-md {
+		font-size: 42px;
+	}
+
+	.title-small {
+		font-size: 42px;
+	}
+
+	.title-large {
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.title {
+		font-size: 46px;
+	}
+
+	.title-md {
+		font-size: 38px;
+	}
+
+	.title-small {
+		font-size: 38px;
+	}
+
+	.title-large {
+		font-size: 46px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.title {
+		font-size: 42px;
+	}
+
+	.title-md {
+		font-size: 34px;
+	}
+
+	.title-small {
+		font-size: 34px;
+	}
+
+	.title-large {
+		font-size: 42px;
+	}
+}
+
 /* SECTION: HERO */
 
 .section-hero {
@@ -1298,6 +1439,20 @@ div {
 
 .partner:last-child {
 	margin: 0;
+}
+
+@media screen and (max-width: 1100px) {
+	.partner {
+		margin: 10px 20px 10px 20px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.freeTrial_dot {
+		width: 4px;
+		height: 4px;
+		margin: 0 8px;
+	}
 }
 
 /* SECTION: ABOUT */
@@ -1886,11 +2041,130 @@ div {
 	line-height: 28px;
 }
 
+@media screen and (max-width: 700px) {
+	.text-description {
+		font-size: 16px;
+	}
+
+	.text-description-md {
+		font-size: 16px;
+	}
+}
+
 .hover\:bg-black\/10:hover{
   background-color: rgb(0 0 0 / 0.1);
 }
 
-@media (min-width: 1900px){
+@media (min-width: 500px){
+
+  .\32xs\:min-w-\[250px\]{
+    min-width: 250px;
+  }
+
+  .\32xs\:max-w-\[400px\]{
+    max-width: 400px;
+  }
+
+  .\32xs\:max-w-\[370px\]{
+    max-width: 370px;
+  }
+}
+
+@media (min-width: 700px){
+
+  .md\:inline{
+    display: inline;
+  }
+
+  .md\:min-w-\[156px\]{
+    min-width: 156px;
+  }
+
+  .md\:max-w-\[580px\]{
+    max-width: 580px;
+  }
+
+  .md\:max-w-full{
+    max-width: 100%;
+  }
+
+  .md\:scale-100{
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:text-\[16px\]{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 900px){
+
+  .\32md\:block{
+    display: block;
+  }
+
+  .\32md\:hidden{
+    display: none;
+  }
+}
+
+@media (min-width: 1100px){
+
+  .xmd\:mt-0{
+    margin-top: 0px;
+  }
+
+  .xmd\:mr-\[40px\]{
+    margin-right: 40px;
+  }
+
+  .xmd\:mb-\[20px\]{
+    margin-bottom: 20px;
+  }
+
+  .xmd\:flex{
+    display: flex;
+  }
+
+  .xmd\:max-w-full{
+    max-width: 100%;
+  }
+
+  .xmd\:scale-95{
+    --tw-scale-x: .95;
+    --tw-scale-y: .95;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .xmd\:flex-nowrap{
+    flex-wrap: nowrap;
+  }
+
+  .xmd\:items-start{
+    align-items: flex-start;
+  }
+
+  .xmd\:justify-between{
+    justify-content: space-between;
+  }
+
+  .xmd\:text-left{
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px){
+
+  .lg\:scale-100{
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+@media (min-width: 1400px){
 
   .xl\:my-0{
     margin-top: 0px;
