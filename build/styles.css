@@ -1023,9 +1023,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-\[15px\]{
   padding: 15px;
 }
-.p-\[54px\]{
-  padding: 54px;
-}
 .p-\[12px\]{
   padding: 12px;
 }
@@ -1056,9 +1053,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.py-\[150px\]{
-  padding-top: 150px;
-  padding-bottom: 150px;
+.px-\[30px\]{
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .px-\[20px\]{
   padding-left: 20px;
@@ -1080,13 +1077,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 25px;
   padding-bottom: 25px;
 }
+.py-\[150px\]{
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
 .py-\[18px\]{
   padding-top: 18px;
   padding-bottom: 18px;
-}
-.px-\[30px\]{
-  padding-left: 30px;
-  padding-right: 30px;
 }
 .pt-\[50px\]{
   padding-top: 50px;
@@ -1105,6 +1102,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pr-\[5px\]{
   padding-right: 5px;
+}
+.pt-\[30px\]{
+  padding-top: 30px;
+}
+.pb-\[60px\]{
+  padding-bottom: 60px;
 }
 .pt-\[52px\]{
   padding-top: 52px;
@@ -2376,6 +2379,15 @@ div {
 
   .\32md\:flex-row{
     flex-direction: row;
+  }
+
+  .\32md\:p-\[54px\]{
+    padding: 54px;
+  }
+
+  .\32md\:py-\[150px\]{
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 
   .\32md\:pt-\[170px\]{
