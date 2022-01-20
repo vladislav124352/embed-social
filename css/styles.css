@@ -532,6 +532,28 @@ div {
 	max-height: 36px;
 }
 
+@media screen and (max-width: 1200px) {
+	.feature-tag {
+		margin: 5px;
+	}
+
+	.feature-tag:last-child {
+		margin: 5px;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.platform {
+		padding: 14px;
+		max-width: 200px;
+		margin: 10px;
+	}
+
+	.platform:last-child {
+		margin: 10px;
+	}
+}
+
 /* SECTION: CTA */
 
 .cta_card {
