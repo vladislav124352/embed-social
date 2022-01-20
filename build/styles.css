@@ -476,6 +476,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 1400px;
   }
 }
+@media (min-width: 1600px){
+
+  .container{
+    max-width: 1600px;
+  }
+}
 @media (min-width: 1900px){
 
   .container{
@@ -1057,9 +1063,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 150px;
   padding-bottom: 150px;
 }
-.px-\[172px\]{
-  padding-left: 172px;
-  padding-right: 172px;
+.px-\[20px\]{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .px-\[15px\]{
   padding-left: 15px;
@@ -2434,11 +2440,6 @@ div {
 
 @media (min-width: 1400px){
 
-  .xl\:my-0{
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
   .xl\:mr-\[50px\]{
     margin-right: 50px;
   }
@@ -2449,10 +2450,6 @@ div {
 
   .xl\:mb-0{
     margin-bottom: 0px;
-  }
-
-  .xl\:mr-\[80px\]{
-    margin-right: 80px;
   }
 
   .xl\:flex-row{
@@ -2471,11 +2468,35 @@ div {
     justify-content: flex-start;
   }
 
-  .xl\:pb-\[44px\]{
+  .xl\:text-left{
+    text-align: left;
+  }
+}
+
+@media (min-width: 1600px){
+
+  .\32xl\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .\32xl\:mr-\[80px\]{
+    margin-right: 80px;
+  }
+
+  .\32xl\:flex-row{
+    flex-direction: row;
+  }
+
+  .\32xl\:items-start{
+    align-items: flex-start;
+  }
+
+  .\32xl\:pb-\[44px\]{
     padding-bottom: 44px;
   }
 
-  .xl\:text-left{
+  .\32xl\:text-left{
     text-align: left;
   }
 }
