@@ -120,7 +120,7 @@ div {
 
 	.title-md {
 		font-size: 38px;
-		line-height: 54px;
+		line-height: 44px;
 	}
 
 	.title-small {
@@ -595,6 +595,13 @@ div {
 	font-size: 22px;
 	line-height: 26px;
 	font-weight: 900;
+}
+
+@media screen and (max-width: 500px) {
+	.feature_card {
+		max-width: 100%;
+		width: 100%;
+	}
 }
 
 /* SECTION: SOCIAL PROOF VIDEO */
