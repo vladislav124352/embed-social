@@ -6,12 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-a,
-input,
-button {
-	outline: none;
-}
-
 div {
 	width: fit-content;
 	width: -moz-available;
@@ -715,34 +709,49 @@ div {
 	font-weight: 400;
 }
 
+@media screen and (max-width: 500px) {
+	.proofs_review {
+		max-width: 100%;
+	}
+
+	.review_info {
+		max-width: 320px;
+	}
+}
+
 /* SECTION: PRICING */
 
-.price_card {
+.price-card {
 	position: relative;
+	margin: 5px;
+}
+
+.price-card_content {
 	background: #ffffff;
 	border: 1px solid #d6dae4;
 	border-radius: 10px;
+	padding: 30px;
+	width: 100%;
+}
+
+.price-card_description {
+	position: relative;
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
 	align-items: flex-start;
-	padding: 30px;
-	height: 553px;
-	margin-right: 10px;
 	z-index: 2;
+	width: 100%;
 }
 
-.price_card:last-child {
-	margin: 0;
-}
-
-.card_name {
+.price-card_name {
 	font-size: 28px;
 	line-height: 30px;
 	font-weight: 700;
 	margin-bottom: 20px;
 }
 
-.price_card .card_price {
+.price {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
@@ -755,7 +764,7 @@ div {
 	line-height: 42px;
 }
 
-.card_button {
+.price-card_button {
 	border: 2px solid #0066ff;
 	box-sizing: border-box;
 	border-radius: 3px;
@@ -771,36 +780,42 @@ div {
 	margin-bottom: 40px;
 }
 
-.card_button_selected {
+.price-card_button_selected {
 	background-color: #0066ff;
 	color: white;
 }
 
-.card_selected {
+.price-card_selected {
 	position: absolute;
-	left: -1px;
-	top: -38px;
-	height: 590px;
-	width: 101%;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
 	border-radius: 10px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	border: 4px solid #0066ff;
-	z-index: -1;
+	border: 5px solid #0066ff;
+	z-index: 1;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 }
 
-.selected_header {
-	height: 38px;
+.price-card_selected-header {
+	height: 44px;
 	width: 100%;
 	background-color: #0066ff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: absolute;
+	left: 0;
+	top: -40px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
-.selected_header p {
+.price-card_selected-header p {
 	font-size: 14px;
 	line-height: 16px;
 	color: white;
@@ -840,6 +855,16 @@ div {
 	padding-top: 15px;
 	font-size: 18px;
 	line-height: 24px;
+}
+
+@media screen and (max-width: 700px) {
+	.price-card-selected {
+		margin-top: 45px;
+	}
+
+	.price-card {
+		width: 100%;
+	}
 }
 
 /* SECTINO: FOOTER */

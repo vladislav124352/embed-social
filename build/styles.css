@@ -440,6 +440,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 500px;
   }
 }
+@media (min-width: 600px){
+
+  .container{
+    max-width: 600px;
+  }
+}
 @media (min-width: 700px){
 
   .container{
@@ -627,12 +633,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mr-\[80px\]{
   margin-right: 80px;
-}
-.mb-\[75px\]{
-  margin-bottom: 75px;
-}
-.mb-\[200px\]{
-  margin-bottom: 200px;
 }
 .box-content{
   box-sizing: content-box;
@@ -832,12 +832,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-.grid-rows-2{
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 .flex-row{
   flex-direction: row;
@@ -1076,13 +1070,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 75px;
   padding-bottom: 75px;
 }
-.py-\[150px\]{
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
 .py-\[18px\]{
   padding-top: 18px;
   padding-bottom: 18px;
+}
+.py-\[150px\]{
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 .pt-\[50px\]{
   padding-top: 50px;
@@ -1167,9 +1161,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-\[40px\]{
   font-size: 40px;
-}
-.text-\[24px\]{
-  font-size: 24px;
 }
 .text-\[48px\]{
   font-size: 48px;
@@ -1295,12 +1286,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-a,
-input,
-button {
-	outline: none;
 }
 
 div {
@@ -2012,34 +1997,49 @@ div {
 	font-weight: 400;
 }
 
+@media screen and (max-width: 500px) {
+	.proofs_review {
+		max-width: 100%;
+	}
+
+	.review_info {
+		max-width: 320px;
+	}
+}
+
 /* SECTION: PRICING */
 
-.price_card {
+.price-card {
 	position: relative;
+	margin: 5px;
+}
+
+.price-card_content {
 	background: #ffffff;
 	border: 1px solid #d6dae4;
 	border-radius: 10px;
+	padding: 30px;
+	width: 100%;
+}
+
+.price-card_description {
+	position: relative;
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
 	align-items: flex-start;
-	padding: 30px;
-	height: 553px;
-	margin-right: 10px;
 	z-index: 2;
+	width: 100%;
 }
 
-.price_card:last-child {
-	margin: 0;
-}
-
-.card_name {
+.price-card_name {
 	font-size: 28px;
 	line-height: 30px;
 	font-weight: 700;
 	margin-bottom: 20px;
 }
 
-.price_card .card_price {
+.price {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-start;
@@ -2052,7 +2052,7 @@ div {
 	line-height: 42px;
 }
 
-.card_button {
+.price-card_button {
 	border: 2px solid #0066ff;
 	box-sizing: border-box;
 	border-radius: 3px;
@@ -2068,36 +2068,42 @@ div {
 	margin-bottom: 40px;
 }
 
-.card_button_selected {
+.price-card_button_selected {
 	background-color: #0066ff;
 	color: white;
 }
 
-.card_selected {
+.price-card_selected {
 	position: absolute;
-	left: -1px;
-	top: -38px;
-	height: 590px;
-	width: 101%;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
 	border-radius: 10px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	border: 4px solid #0066ff;
-	z-index: -1;
+	border: 5px solid #0066ff;
+	z-index: 1;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 }
 
-.selected_header {
-	height: 38px;
+.price-card_selected-header {
+	height: 44px;
 	width: 100%;
 	background-color: #0066ff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: absolute;
+	left: 0;
+	top: -40px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
-.selected_header p {
+.price-card_selected-header p {
 	font-size: 14px;
 	line-height: 16px;
 	color: white;
@@ -2137,6 +2143,16 @@ div {
 	padding-top: 15px;
 	font-size: 18px;
 	line-height: 24px;
+}
+
+@media screen and (max-width: 700px) {
+	.price-card-selected {
+		margin-top: 45px;
+	}
+
+	.price-card {
+		width: 100%;
+	}
 }
 
 /* SECTINO: FOOTER */
@@ -2273,8 +2289,32 @@ div {
     padding-bottom: 150px;
   }
 
+  .\32xs\:text-center{
+    text-align: center;
+  }
+
   .\32xs\:text-\[42px\]{
     font-size: 42px;
+  }
+
+  .\32xs\:text-\[20px\]{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 600px){
+
+  .\33xs\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .\33xs\:grid-rows-4{
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+
+  .\33xs\:py-\[150px\]{
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
 
@@ -2290,6 +2330,18 @@ div {
 
   .md\:mb-\[100px\]{
     margin-bottom: 100px;
+  }
+
+  .md\:mb-\[80px\]{
+    margin-bottom: 80px;
+  }
+
+  .md\:mb-\[75px\]{
+    margin-bottom: 75px;
+  }
+
+  .md\:mb-\[200px\]{
+    margin-bottom: 200px;
   }
 
   .md\:inline{
@@ -2335,6 +2387,10 @@ div {
     padding-bottom: 150px;
   }
 
+  .md\:text-center{
+    text-align: center;
+  }
+
   .md\:text-\[16px\]{
     font-size: 16px;
   }
@@ -2349,6 +2405,10 @@ div {
 
   .md\:text-\[46px\]{
     font-size: 46px;
+  }
+
+  .md\:text-\[24px\]{
+    font-size: 24px;
   }
 
   .md\:leading-\[65px\]{
@@ -2539,6 +2599,10 @@ div {
     --tw-scale-x: 1;
     --tw-scale-y: 1;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:flex-nowrap{
+    flex-wrap: nowrap;
   }
 }
 
