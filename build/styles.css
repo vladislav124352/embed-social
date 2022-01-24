@@ -599,8 +599,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-\[28px\]{
   margin-bottom: 28px;
 }
-.mb-\[150px\]{
-  margin-bottom: 150px;
+.mb-\[100px\]{
+  margin-bottom: 100px;
+}
+.mb-\[60px\]{
+  margin-bottom: 60px;
 }
 .mr-\[40px\]{
   margin-right: 40px;
@@ -608,11 +611,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-\[32px\]{
   margin-bottom: 32px;
 }
+.mb-\[25px\]{
+  margin-bottom: 25px;
+}
 .ml-\[-44px\]{
   margin-left: -44px;
 }
-.mb-\[100px\]{
-  margin-bottom: 100px;
+.mb-\[150px\]{
+  margin-bottom: 150px;
 }
 .mr-\[50px\]{
   margin-right: 50px;
@@ -1025,9 +1031,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.py-\[100px\]{
-  padding-top: 100px;
-  padding-bottom: 100px;
+.py-\[80px\]{
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .px-\[30px\]{
   padding-left: 30px;
@@ -1049,6 +1055,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 75px;
   padding-bottom: 75px;
 }
+.py-\[100px\]{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .py-\[18px\]{
   padding-top: 18px;
   padding-bottom: 18px;
@@ -1062,11 +1072,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pr-\[5px\]{
   padding-right: 5px;
 }
-.pt-\[30px\]{
-  padding-top: 30px;
+.pt-\[80px\]{
+  padding-top: 80px;
 }
 .pb-\[60px\]{
   padding-bottom: 60px;
+}
+.pt-\[30px\]{
+  padding-top: 30px;
 }
 .pt-\[52px\]{
   padding-top: 52px;
@@ -1118,9 +1131,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-\[12\.5px\]{
   font-size: 12.5px;
-}
-.text-\[20px\]{
-  font-size: 20px;
 }
 .text-\[36px\]{
   font-size: 36px;
@@ -1771,7 +1781,7 @@ div {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	padding: 13px 10px;
+	padding: 18px 10px;
 	border-radius: 3px;
 	background-color: #eef1f7;
 	margin-right: 10px;
@@ -1781,8 +1791,13 @@ div {
 	margin: 0;
 }
 
-.feature-tag svg {
+.feature-tag_icon {
 	margin-right: 5px;
+}
+
+.feature-tag_text {
+	font-size: 16px;
+	line-height: 16px;
 }
 
 .platform {
@@ -1806,6 +1821,18 @@ div {
 	max-height: 36px;
 }
 
+@media screen and (max-width: 1300px) {
+	.platform {
+		padding: 14px;
+		max-width: 200px;
+		margin: 10px;
+	}
+
+	.platform:last-child {
+		margin: 10px;
+	}
+}
+
 @media screen and (max-width: 1200px) {
 	.feature-tag {
 		margin: 5px;
@@ -1816,15 +1843,34 @@ div {
 	}
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 700px) {
+	.feature-tag {
+		padding: 13px 10px;
+	}
+
+	.feature-tag_text {
+		font-size: 15px;
+	}
+
+	.feature-tag_icon {
+		margin-right: 8px;
+	}
+}
+
+@media screen and (max-width: 600px) {
 	.platform {
-		padding: 14px;
-		max-width: 200px;
-		margin: 10px;
+		max-width: 150px;
+		margin: 5px;
 	}
 
 	.platform:last-child {
-		margin: 10px;
+		margin: 5px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.platform {
+		max-width: 100px;
 	}
 }
 
@@ -2402,6 +2448,14 @@ div {
     margin-bottom: 70px;
   }
 
+  .xs\:mb-\[150px\]{
+    margin-bottom: 150px;
+  }
+
+  .xs\:mb-\[50px\]{
+    margin-bottom: 50px;
+  }
+
   .xs\:h-\[42px\]{
     height: 42px;
   }
@@ -2469,6 +2523,10 @@ div {
     font-size: 16px;
   }
 
+  .xs\:text-\[18px\]{
+    font-size: 18px;
+  }
+
   .xs\:text-\[42px\]{
     font-size: 42px;
   }
@@ -2490,6 +2548,10 @@ div {
 
   .\32xs\:mb-\[20px\]{
     margin-bottom: 20px;
+  }
+
+  .\32xs\:mb-\[32px\]{
+    margin-bottom: 32px;
   }
 
   .\32xs\:mt-\[50px\]{
@@ -2530,6 +2592,10 @@ div {
   .\32xs\:pb-\[100px\]{
     padding-bottom: 100px;
   }
+
+  .\32xs\:text-\[20px\]{
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 700px){
@@ -2540,6 +2606,10 @@ div {
 
   .\33xs\:mb-\[30px\]{
     margin-bottom: 30px;
+  }
+
+  .\33xs\:mb-\[50px\]{
+    margin-bottom: 50px;
   }
 
   .\33xs\:mb-\[100px\]{

@@ -520,7 +520,7 @@ div {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	padding: 13px 10px;
+	padding: 18px 10px;
 	border-radius: 3px;
 	background-color: #eef1f7;
 	margin-right: 10px;
@@ -530,8 +530,13 @@ div {
 	margin: 0;
 }
 
-.feature-tag svg {
+.feature-tag_icon {
 	margin-right: 5px;
+}
+
+.feature-tag_text {
+	font-size: 16px;
+	line-height: 16px;
 }
 
 .platform {
@@ -555,6 +560,18 @@ div {
 	max-height: 36px;
 }
 
+@media screen and (max-width: 1300px) {
+	.platform {
+		padding: 14px;
+		max-width: 200px;
+		margin: 10px;
+	}
+
+	.platform:last-child {
+		margin: 10px;
+	}
+}
+
 @media screen and (max-width: 1200px) {
 	.feature-tag {
 		margin: 5px;
@@ -565,15 +582,34 @@ div {
 	}
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 700px) {
+	.feature-tag {
+		padding: 13px 10px;
+	}
+
+	.feature-tag_text {
+		font-size: 15px;
+	}
+
+	.feature-tag_icon {
+		margin-right: 8px;
+	}
+}
+
+@media screen and (max-width: 600px) {
 	.platform {
-		padding: 14px;
-		max-width: 200px;
-		margin: 10px;
+		max-width: 150px;
+		margin: 5px;
 	}
 
 	.platform:last-child {
-		margin: 10px;
+		margin: 5px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.platform {
+		max-width: 100px;
 	}
 }
 
