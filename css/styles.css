@@ -285,7 +285,7 @@ div {
 
 /* SECTION: BENEFITS-2 */
 
-.benefits-2_card {
+.benefits-advantage {
 	width: 100%;
 	height: 100%;
 	max-width: 420px;
@@ -296,34 +296,34 @@ div {
 	margin-right: 20px;
 }
 
-.benefits-card_title {
+.benefits-advantage_title {
 	font-weight: 900;
 	font-size: 32px;
 	line-height: 37px;
 	margin-bottom: 30px;
 }
 
-.card_description {
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: 400;
-}
-
-.card_iconBlock {
+.benefits-advantage_iconBlock {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	margin-bottom: 10px;
 }
 
-.iconBlock_text {
+.advantage-iconBlock_text {
 	font-weight: 900;
 	font-size: 24px;
 	line-height: 28px;
 }
 
+.benefits-advantage_description {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
 @media screen and (max-width: 1100px) {
-	.benefits-2_card {
+	.benefits-advantage {
 		max-width: 620px;
 		margin-bottom: 20px;
 		margin-right: 0;
@@ -332,27 +332,58 @@ div {
 }
 
 @media screen and (max-width: 600px) {
-	.benefits-card_title {
+	.benefits-advantage_title {
 		font-size: 28px;
-		line-height: 35px;
-		margin-bottom: 20px;
+		line-height: 28px;
+		margin-bottom: 25px;
 	}
 
-	.card_iconBlock {
+	.benefits-advantage_iconBlock {
 		margin-bottom: 5px;
 	}
 
-	.card_iconBlock svg {
+	.advantage-iconBlock_icon {
 		margin-right: 8px;
 		width: 20px;
 	}
 
-	.iconBlock_text {
+	.advantage-iconBlock_text {
 		font-size: 20px;
 	}
 
-	.card_description {
+	.benefits-advantage_description {
 		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.benefits-advantage {
+		margin-bottom: 10px;
+	}
+
+	.benefits-advantage_title {
+		font-size: 22px;
+		line-height: 22px;
+		margin-bottom: 15px;
+	}
+
+	.benefits-advantage_iconBlock {
+		margin-bottom: 5px;
+	}
+
+	.advantage-iconBlock_icon {
+		margin-right: 8px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.advantage-iconBlock_text {
+		font-size: 18px;
+		line-height: 19px;
+	}
+
+	.benefits-advantage_description {
+		font-size: 15px;
 	}
 }
 

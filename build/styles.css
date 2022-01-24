@@ -589,12 +589,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-\[20px\]{
   margin-bottom: 20px;
 }
-.mb-\[80px\]{
-  margin-bottom: 80px;
-}
-.mr-\[15px\]{
-  margin-right: 15px;
-}
 .mb-\[70px\]{
   margin-bottom: 70px;
 }
@@ -630,6 +624,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mr-\[80px\]{
   margin-right: 80px;
+}
+.mb-\[80px\]{
+  margin-bottom: 80px;
 }
 .box-content{
   box-sizing: content-box;
@@ -1032,13 +1029,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.py-\[100px\]{
-  padding-top: 100px;
-  padding-bottom: 100px;
+.py-\[60px\]{
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .py-\[80px\]{
   padding-top: 80px;
   padding-bottom: 80px;
+}
+.py-\[100px\]{
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .px-\[30px\]{
   padding-left: 30px;
@@ -1540,7 +1541,7 @@ div {
 
 /* SECTION: BENEFITS-2 */
 
-.benefits-2_card {
+.benefits-advantage {
 	width: 100%;
 	height: 100%;
 	max-width: 420px;
@@ -1551,34 +1552,34 @@ div {
 	margin-right: 20px;
 }
 
-.benefits-card_title {
+.benefits-advantage_title {
 	font-weight: 900;
 	font-size: 32px;
 	line-height: 37px;
 	margin-bottom: 30px;
 }
 
-.card_description {
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: 400;
-}
-
-.card_iconBlock {
+.benefits-advantage_iconBlock {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	margin-bottom: 10px;
 }
 
-.iconBlock_text {
+.advantage-iconBlock_text {
 	font-weight: 900;
 	font-size: 24px;
 	line-height: 28px;
 }
 
+.benefits-advantage_description {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
 @media screen and (max-width: 1100px) {
-	.benefits-2_card {
+	.benefits-advantage {
 		max-width: 620px;
 		margin-bottom: 20px;
 		margin-right: 0;
@@ -1587,27 +1588,58 @@ div {
 }
 
 @media screen and (max-width: 600px) {
-	.benefits-card_title {
+	.benefits-advantage_title {
 		font-size: 28px;
-		line-height: 35px;
-		margin-bottom: 20px;
+		line-height: 28px;
+		margin-bottom: 25px;
 	}
 
-	.card_iconBlock {
+	.benefits-advantage_iconBlock {
 		margin-bottom: 5px;
 	}
 
-	.card_iconBlock svg {
+	.advantage-iconBlock_icon {
 		margin-right: 8px;
 		width: 20px;
 	}
 
-	.iconBlock_text {
+	.advantage-iconBlock_text {
 		font-size: 20px;
 	}
 
-	.card_description {
+	.benefits-advantage_description {
 		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.benefits-advantage {
+		margin-bottom: 10px;
+	}
+
+	.benefits-advantage_title {
+		font-size: 22px;
+		line-height: 22px;
+		margin-bottom: 15px;
+	}
+
+	.benefits-advantage_iconBlock {
+		margin-bottom: 5px;
+	}
+
+	.advantage-iconBlock_icon {
+		margin-right: 8px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.advantage-iconBlock_text {
+		font-size: 18px;
+		line-height: 19px;
+	}
+
+	.benefits-advantage_description {
+		font-size: 15px;
 	}
 }
 
@@ -2345,6 +2377,10 @@ div {
     margin-bottom: 40px;
   }
 
+  .xs\:mb-\[80px\]{
+    margin-bottom: 80px;
+  }
+
   .xs\:w-auto{
     width: auto;
   }
@@ -2370,9 +2406,9 @@ div {
     padding-bottom: 70px;
   }
 
-  .xs\:py-\[150px\]{
-    padding-top: 150px;
-    padding-bottom: 150px;
+  .xs\:py-\[100px\]{
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .xs\:pt-\[80px\]{
@@ -2421,6 +2457,11 @@ div {
   .\32xs\:py-\[100px\]{
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  .\32xs\:py-\[120px\]{
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .\32xs\:py-\[150px\]{
@@ -2537,6 +2578,11 @@ div {
 
   .md\:flex-row{
     flex-direction: row;
+  }
+
+  .md\:py-\[150px\]{
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
 
