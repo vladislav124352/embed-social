@@ -893,6 +893,22 @@ div {
 	font-size: 16px;
 	margin-bottom: 8px;
 	color: #d8d8d8;
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 800px) {
+	.footer_block {
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+
+	.block_name {
+		margin-bottom: 15px;
+	}
+
+	.block-list_item {
+		margin-bottom: 5px;
+	}
 }
 
 /* ANYWHERE */

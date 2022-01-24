@@ -11,9 +11,10 @@ module.exports = {
       }
     },
     screens: {
-      '2xs': '500px',
-      '3xs': '600px',
-      md: '700px',
+      xs: '500px',
+      '2xs': '600px',
+      '3xs': '700px',
+      md: '800px',
       '2md': '900px',
       '3md': '1000px',
       '4md': '1100px',
