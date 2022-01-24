@@ -586,9 +586,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-\[40px\]{
   margin-bottom: 40px;
 }
-.mb-\[70px\]{
-  margin-bottom: 70px;
-}
 .mb-\[20px\]{
   margin-bottom: 20px;
 }
@@ -597,6 +594,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mr-\[15px\]{
   margin-right: 15px;
+}
+.mb-\[70px\]{
+  margin-bottom: 70px;
 }
 .mb-\[28px\]{
   margin-bottom: 28px;
@@ -670,9 +670,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-\[32px\]{
   height: 32px;
 }
-.h-\[50px\]{
-  height: 50px;
-}
 .h-\[full\]{
   height: full;
 }
@@ -719,9 +716,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-\[70px\]{
   width: 70px;
-}
-.w-\[50px\]{
-  width: 50px;
 }
 .w-\[full\]{
   width: full;
@@ -1076,12 +1070,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pb-\[40px\]{
   padding-bottom: 40px;
 }
-.pt-\[100px\]{
-  padding-top: 100px;
-}
-.pb-\[100px\]{
-  padding-bottom: 100px;
-}
 .pr-\[5px\]{
   padding-right: 5px;
 }
@@ -1096,6 +1084,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pb-\[80px\]{
   padding-bottom: 80px;
+}
+.pt-\[100px\]{
+  padding-top: 100px;
 }
 .pb-\[75px\]{
   padding-bottom: 75px;
@@ -1136,9 +1127,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[12\.5px\]{
   font-size: 12.5px;
 }
-.text-\[22px\]{
-  font-size: 22px;
-}
 .text-\[20px\]{
   font-size: 20px;
 }
@@ -1175,9 +1163,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .leading-\[30px\]{
   line-height: 30px;
 }
-.leading-\[26px\]{
-  line-height: 26px;
-}
 .leading-\[23px\]{
   line-height: 23px;
 }
@@ -1186,6 +1171,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .leading-\[50px\]{
   line-height: 50px;
+}
+.leading-\[26px\]{
+  line-height: 26px;
 }
 .leading-\[45px\]{
   line-height: 45px;
@@ -1467,7 +1455,7 @@ div {
 
 /* SECTION: BENEFITS-1 */
 
-.benefits-social_item {
+.benefits-social {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1480,23 +1468,73 @@ div {
 	margin-right: 20px;
 }
 
-.benefits-social_item:last-child {
-	margin: 0;
+.benefits-social:last-child {
+	margin-right: 0;
+}
+
+.benefits-social_img {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+.benefits-social_title {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 22px;
+	margin-bottom: 4px;
+}
+
+.benefits-social_service {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 22px;
 }
 
 @media screen and (max-width: 1400px) {
-	.benefits-social_item {
+	.benefits-social {
 		margin: 10px;
 	}
 
-	.benefits-social_item:last-child {
+	.benefits-social:last-child {
 		margin: 10px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.benefits-social {
+		height: auto;
+		padding: 20px 20px 30px 20px;
+	}
+
+	.benefits-social_img {
+		width: 40px;
+		height: 40px;
+		margin-bottom: 15px;
+	}
+
+	.benefits-social_title {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 18px;
+		margin-bottom: 4px;
+	}
+
+	.benefits-social_service {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 16px;
 	}
 }
 
 @media screen and (max-width: 550px) {
-	.benefits-social_item {
+	.benefits-social {
 		width: 100%;
+		margin: 5px;
+	}
+
+	.benefits-social:last-child {
+		margin: 5px;
 	}
 }
 
@@ -2303,6 +2341,10 @@ div {
     margin-bottom: 20px;
   }
 
+  .xs\:mb-\[40px\]{
+    margin-bottom: 40px;
+  }
+
   .xs\:w-auto{
     width: auto;
   }
@@ -2323,6 +2365,11 @@ div {
     grid-template-rows: repeat(4, minmax(0, 1fr));
   }
 
+  .xs\:py-\[70px\]{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
   .xs\:py-\[150px\]{
     padding-top: 150px;
     padding-bottom: 150px;
@@ -2340,6 +2387,10 @@ div {
     text-align: center;
   }
 
+  .xs\:text-\[16px\]{
+    font-size: 16px;
+  }
+
   .xs\:text-\[42px\]{
     font-size: 42px;
   }
@@ -2355,12 +2406,21 @@ div {
     margin-bottom: 50px;
   }
 
+  .\32xs\:mb-\[70px\]{
+    margin-bottom: 70px;
+  }
+
   .\32xs\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .\32xs\:grid-rows-4{
     grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+
+  .\32xs\:py-\[100px\]{
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .\32xs\:py-\[150px\]{
