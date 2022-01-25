@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embed Social</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer type="module" src="js/main.js"></script>
 </head>
 
 <body class="font-body">
     <main>
-        <header class="w-full shadow-[0_0_20px_#00000010] py-[10px]">
+        <header id="header" class="w-full bg-white shadow-[0_0_20px_#00000010] py-[10px]">
             <div class="container-center justify-between">
                 <div class="flex items-center">
-                    <svg class="mr-[10px]" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    <svg class="mr-[10px] w-[35px] h-[35px] xs:w-[40px] xs:h-[40px]" viewBox="0 0 40 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <rect width="40" height="40" rx="6.66667" fill="black" />
                         <path d="M19.6589 11.5042V12.621C19.6589 13.5821 19.479 13.7379 
@@ -31,7 +32,9 @@
                              22.0015V21.8457L20.4744 18.9624C19.8277 18.6508 19.6477 18.4948 19.6477 
                              17.5077V16.2609C19.6477 15.4815 19.8802 15.2221 20.5775 15.6117Z" fill="white" />
                     </svg>
-                    <a rel="noreferrer" href='#' class="text-[18px] font-maxbold">embedsocial</a>
+                    <a rel="noreferrer" href='#' class="text-[18px] font-maxbold">
+                        embedsocial
+                    </a>
                 </div>
                 <nav class="hidden h-[46.5px] 2md:block">
                     <ul class="flex h-full items-center justify-between">

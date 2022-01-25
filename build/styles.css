@@ -561,8 +561,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-\[20px\]{
   margin-right: 20px;
 }
-.mb-\[5px\]{
-  margin-bottom: 5px;
+.mb-\[3px\]{
+  margin-bottom: 3px;
 }
 .mb-\[50px\]{
   margin-bottom: 50px;
@@ -584,6 +584,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mr-\[9px\]{
   margin-right: 9px;
+}
+.mb-\[5px\]{
+  margin-bottom: 5px;
 }
 .mt-\[15px\]{
   margin-top: 15px;
@@ -645,6 +648,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hidden{
   display: none;
 }
+.h-\[35px\]{
+  height: 35px;
+}
 .h-\[46\.5px\]{
   height: 46.5px;
 }
@@ -690,8 +696,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-full{
   width: 100%;
 }
-.w-\[32px\]{
-  width: 32px;
+.w-\[35px\]{
+  width: 35px;
+}
+.w-\[30px\]{
+  width: 30px;
 }
 .w-\[286px\]{
   width: 286px;
@@ -932,16 +941,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-color: rgb(214 218 228 / var(--tw-border-opacity));
 }
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
 .bg-black\/80{
   background-color: rgb(0 0 0 / 0.8);
 }
 .bg-\[\#0066FF\]{
   --tw-bg-opacity: 1;
   background-color: rgb(0 102 255 / var(--tw-bg-opacity));
-}
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-\[\#d7d9df\]{
   --tw-bg-opacity: 1;
@@ -1309,6 +1318,82 @@ div {
 	align-items: center;
 	margin-right: 30px;
 	height: 100%;
+}
+
+.header-scroll-sticky {
+	-webkit-animation-name: headerScrollSticky;
+	        animation-name: headerScrollSticky;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+	-webkit-animation-duration: 0.3s;
+	        animation-duration: 0.3s;
+}
+
+.header-scroll-relative {
+	-webkit-animation-name: headerScrollRelative;
+	        animation-name: headerScrollRelative;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+	-webkit-animation-duration: 0s;
+	        animation-duration: 0s;
+}
+
+@-webkit-keyframes headerScrollSticky {
+	from {
+		z-index: 10;
+		position: -webkit-sticky;
+		position: sticky;
+		top: -55px;
+	}
+	to {
+		z-index: 10;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+	}
+}
+
+@keyframes headerScrollSticky {
+	from {
+		z-index: 10;
+		position: -webkit-sticky;
+		position: sticky;
+		top: -55px;
+	}
+	to {
+		z-index: 10;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+	}
+}
+
+@-webkit-keyframes headerScrollRelative {
+	from {
+		z-index: 10;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+	}
+	to {
+		z-index: 10;
+		position: relative;
+		top: 0;
+	}
+}
+
+@keyframes headerScrollRelative {
+	from {
+		z-index: 10;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+	}
+	to {
+		z-index: 10;
+		position: relative;
+		top: 0;
+	}
 }
 
 /* SECTIONS */
@@ -2550,6 +2635,10 @@ div {
 
 @media (min-width: 500px){
 
+  .xs\:mb-\[5px\]{
+    margin-bottom: 5px;
+  }
+
   .xs\:mb-\[75px\]{
     margin-bottom: 75px;
   }
@@ -2590,8 +2679,20 @@ div {
     margin-bottom: 30px;
   }
 
+  .xs\:h-\[40px\]{
+    height: 40px;
+  }
+
   .xs\:h-\[42px\]{
     height: 42px;
+  }
+
+  .xs\:w-\[40px\]{
+    width: 40px;
+  }
+
+  .xs\:w-\[32px\]{
+    width: 32px;
   }
 
   .xs\:w-fit{

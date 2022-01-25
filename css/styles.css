@@ -54,6 +54,44 @@ div {
 	height: 100%;
 }
 
+.header-scroll-sticky {
+	animation-name: headerScrollSticky;
+	animation-fill-mode: both;
+	animation-duration: 0.3s;
+}
+
+.header-scroll-relative {
+	animation-name: headerScrollRelative;
+	animation-fill-mode: both;
+	animation-duration: 0s;
+}
+
+@keyframes headerScrollSticky {
+	from {
+		z-index: 10;
+		position: sticky;
+		top: -55px;
+	}
+	to {
+		z-index: 10;
+		position: sticky;
+		top: 0;
+	}
+}
+
+@keyframes headerScrollRelative {
+	from {
+		z-index: 10;
+		position: sticky;
+		top: 0;
+	}
+	to {
+		z-index: 10;
+		position: relative;
+		top: 0;
+	}
+}
+
 /* SECTIONS */
 
 .section-gray {
