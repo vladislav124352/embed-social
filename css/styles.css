@@ -900,7 +900,19 @@ div {
 	color: white;
 }
 
-.price-card_selected {
+.price-card_check {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 10px;
+}
+
+.price-card_check svg {
+	margin-right: 10px;
+	min-width: 17px;
+}
+
+.price-card_selectedLabel {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -916,7 +928,7 @@ div {
 	border-top-right-radius: 0;
 }
 
-.price-card_selected-header {
+.price-card_selectedLabel-header {
 	height: 44px;
 	width: 100%;
 	background-color: #0066ff;
@@ -930,7 +942,7 @@ div {
 	border-top-right-radius: 10px;
 }
 
-.price-card_selected-header p {
+.price-card_selectedLabel-header p {
 	font-size: 14px;
 	line-height: 16px;
 	color: white;
@@ -973,12 +985,49 @@ div {
 }
 
 @media screen and (max-width: 700px) {
+	.price-card {
+		width: 100%;
+		margin: 5px 0;
+	}
+
 	.price-card-selected {
 		margin-top: 45px;
 	}
+}
 
-	.price-card {
-		width: 100%;
+@media screen and (max-width: 500px) {
+	.price-card_content {
+		padding: 25px;
+	}
+
+	.price-card_name {
+		font-size: 26px;
+		line-height: 28px;
+		margin-bottom: 15px;
+	}
+
+	.price {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+
+	.price_cost {
+		font-size: 38px;
+		line-height: 32px;
+	}
+
+	.price-card_button {
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+
+	.price-card_check {
+		margin-bottom: 5px;
+	}
+
+	.question_answer {
+		font-size: 16px;
+		line-height: 20px;
 	}
 }
 

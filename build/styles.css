@@ -799,6 +799,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-\[300px\]{
   max-width: 300px;
 }
+.max-w-\[350px\]{
+  max-width: 350px;
+}
 .max-w-\[830px\]{
   max-width: 830px;
 }
@@ -1058,13 +1061,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.px-\[25px\]{
+  padding-left: 25px;
+  padding-right: 25px;
+}
 .py-\[100px\]{
   padding-top: 100px;
   padding-bottom: 100px;
-}
-.py-\[18px\]{
-  padding-top: 18px;
-  padding-bottom: 18px;
 }
 .pt-\[50px\]{
   padding-top: 50px;
@@ -1092,6 +1095,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pb-\[100px\]{
   padding-bottom: 100px;
+}
+.pb-\[50px\]{
+  padding-bottom: 50px;
 }
 .pt-\[35px\]{
   padding-top: 35px;
@@ -1179,9 +1185,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .leading-\[18px\]{
   line-height: 18px;
-}
-.leading-\[28px\]{
-  line-height: 28px;
 }
 .leading-\[20px\]{
   line-height: 20px;
@@ -2158,7 +2161,19 @@ div {
 	color: white;
 }
 
-.price-card_selected {
+.price-card_check {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 10px;
+}
+
+.price-card_check svg {
+	margin-right: 10px;
+	min-width: 17px;
+}
+
+.price-card_selectedLabel {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -2174,7 +2189,7 @@ div {
 	border-top-right-radius: 0;
 }
 
-.price-card_selected-header {
+.price-card_selectedLabel-header {
 	height: 44px;
 	width: 100%;
 	background-color: #0066ff;
@@ -2188,7 +2203,7 @@ div {
 	border-top-right-radius: 10px;
 }
 
-.price-card_selected-header p {
+.price-card_selectedLabel-header p {
 	font-size: 14px;
 	line-height: 16px;
 	color: white;
@@ -2231,12 +2246,49 @@ div {
 }
 
 @media screen and (max-width: 700px) {
+	.price-card {
+		width: 100%;
+		margin: 5px 0;
+	}
+
 	.price-card-selected {
 		margin-top: 45px;
 	}
+}
 
-	.price-card {
-		width: 100%;
+@media screen and (max-width: 500px) {
+	.price-card_content {
+		padding: 25px;
+	}
+
+	.price-card_name {
+		font-size: 26px;
+		line-height: 28px;
+		margin-bottom: 15px;
+	}
+
+	.price {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+
+	.price_cost {
+		font-size: 38px;
+		line-height: 32px;
+	}
+
+	.price-card_button {
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+
+	.price-card_check {
+		margin-bottom: 5px;
+	}
+
+	.question_answer {
+		font-size: 16px;
+		line-height: 20px;
 	}
 }
 
@@ -2520,6 +2572,10 @@ div {
     margin-bottom: 15px;
   }
 
+  .xs\:mb-\[30px\]{
+    margin-bottom: 30px;
+  }
+
   .xs\:h-\[42px\]{
     height: 42px;
   }
@@ -2550,6 +2606,10 @@ div {
 
   .xs\:max-w-full{
     max-width: 100%;
+  }
+
+  .xs\:max-w-\[450px\]{
+    max-width: 450px;
   }
 
   .xs\:grid-cols-2{
@@ -2624,10 +2684,6 @@ div {
     font-size: 32px;
   }
 
-  .xs\:text-\[20px\]{
-    font-size: 20px;
-  }
-
   .xs\:leading-\[35px\]{
     line-height: 35px;
   }
@@ -2638,6 +2694,10 @@ div {
 
   .xs\:leading-\[21px\]{
     line-height: 21px;
+  }
+
+  .xs\:leading-\[22px\]{
+    line-height: 22px;
   }
 }
 
@@ -2663,12 +2723,24 @@ div {
     margin-top: 50px;
   }
 
+  .\32xs\:mb-\[40px\]{
+    margin-bottom: 40px;
+  }
+
+  .\32xs\:mb-\[80px\]{
+    margin-bottom: 80px;
+  }
+
   .\32xs\:w-auto{
     width: auto;
   }
 
   .\32xs\:max-w-\[500px\]{
     max-width: 500px;
+  }
+
+  .\32xs\:max-w-\[550px\]{
+    max-width: 550px;
   }
 
   .\32xs\:grid-cols-2{
@@ -2687,6 +2759,21 @@ div {
   .\32xs\:py-\[120px\]{
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .\32xs\:px-\[15px\]{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .\32xs\:py-\[18px\]{
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .\32xs\:px-\[30px\]{
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .\32xs\:py-\[150px\]{
@@ -2813,6 +2900,10 @@ div {
   .\33xs\:leading-\[56px\]{
     line-height: 56px;
   }
+
+  .\33xs\:leading-\[28px\]{
+    line-height: 28px;
+  }
 }
 
 @media (min-width: 800px){
@@ -2823,6 +2914,10 @@ div {
 
   .md\:max-w-full{
     max-width: 100%;
+  }
+
+  .md\:max-w-\[600px\]{
+    max-width: 600px;
   }
 
   .md\:flex-row{
