@@ -628,7 +628,7 @@ div {
 
 /* SECTION: FEATURE 3 */
 
-.feature_card {
+.feature-card {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -641,11 +641,11 @@ div {
 	padding: 22px;
 }
 
-.feature_card svg {
+.feature-card svg {
 	margin-bottom: 20px;
 }
 
-.feature_card span {
+.feature-card span {
 	margin-bottom: 10px;
 	font-size: 22px;
 	line-height: 26px;
@@ -653,9 +653,26 @@ div {
 }
 
 @media screen and (max-width: 500px) {
-	.feature_card {
+	.feature-card {
 		max-width: 100%;
 		width: 100%;
+		padding: 20px 20px 30px 20px;
+		min-height: auto;
+	}
+
+	.feature-card svg {
+		margin-bottom: 10px;
+		width: 40px;
+	}
+
+	.feature-card span {
+		margin-bottom: 5px;
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	.feature-card p {
+		line-height: 19px;
 	}
 }
 
