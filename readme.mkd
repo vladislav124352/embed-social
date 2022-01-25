@@ -1,9 +1,10 @@
 # Welcome to Embed Social Landing Page!
 
 ![Embed social preview](https://s3-alpha.figma.com/hub/file/689115664/afe6a9b1-e778-4484-ac93-6279ec990137-cover.png)
-![Embed social landing page](https://i.ibb.co/XyCHymT/image.png)
-This landing page was made by Angela Ristovska from figma - https://www.figma.com/@changela.
-Thank you very much, Angela :) I hope you enjoy this project, because I worked very, very hard on it.
+![Embed social landing page](https://i.ibb.co/2K1pq19/embed-social-screen.png)
+This landing page was made by [Angela Ristovska](https://www.figma.com/@changela).
+Thank you very much, Angela :)
+So, I hope you enjoy this project, because I worked very, very hard on it.
 
 ## So I used:
 
