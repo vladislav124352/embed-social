@@ -1072,10 +1072,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 25px;
   padding-right: 25px;
 }
-.py-\[100px\]{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 .pt-\[50px\]{
   padding-top: 50px;
 }
