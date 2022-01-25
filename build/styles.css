@@ -1051,9 +1051,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 26px;
   padding-bottom: 26px;
 }
-.py-\[75px\]{
-  padding-top: 75px;
-  padding-bottom: 75px;
+.py-\[40px\]{
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .py-\[100px\]{
   padding-top: 100px;
@@ -1132,8 +1132,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[21px\]{
   font-size: 21px;
 }
-.text-\[40px\]{
-  font-size: 40px;
+.text-\[30px\]{
+  font-size: 30px;
 }
 .text-\[36px\]{
   font-size: 36px;
@@ -1171,8 +1171,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .leading-\[26px\]{
   line-height: 26px;
 }
-.leading-\[45px\]{
-  line-height: 45px;
+.leading-\[34px\]{
+  line-height: 34px;
 }
 .leading-\[36px\]{
   line-height: 36px;
@@ -1966,6 +1966,12 @@ div {
 	transform: rotate(90deg) scale(0.2);
 }
 
+@media screen and (max-width: 500px) {
+	.play-wrapper {
+		transform: rotate(90deg) scale(0.15);
+	}
+}
+
 /* SECTION: SOCIAL PROOFS REVIEWS */
 
 .proofs_review {
@@ -2309,20 +2315,24 @@ div {
 @media screen and (max-width: 700px) {
 	.text-description {
 		font-size: 16px;
+		line-height: 24px;
 	}
 
 	.text-description-md {
 		font-size: 16px;
+		line-height: 24px;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.text-description {
 		font-size: 15px;
+		line-height: 22px;
 	}
 
 	.text-description-md {
 		font-size: 15px;
+		line-height: 22px;
 	}
 }
 
@@ -2574,6 +2584,10 @@ div {
 
   .xs\:leading-\[35px\]{
     line-height: 35px;
+  }
+
+  .xs\:leading-\[36px\]{
+    line-height: 36px;
   }
 }
 

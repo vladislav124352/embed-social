@@ -711,6 +711,12 @@ div {
 	transform: rotate(90deg) scale(0.2);
 }
 
+@media screen and (max-width: 500px) {
+	.play-wrapper {
+		transform: rotate(90deg) scale(0.15);
+	}
+}
+
 /* SECTION: SOCIAL PROOFS REVIEWS */
 
 .proofs_review {
@@ -1057,20 +1063,24 @@ div {
 @media screen and (max-width: 700px) {
 	.text-description {
 		font-size: 16px;
+		line-height: 24px;
 	}
 
 	.text-description-md {
 		font-size: 16px;
+		line-height: 24px;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.text-description {
 		font-size: 15px;
+		line-height: 22px;
 	}
 
 	.text-description-md {
 		font-size: 15px;
+		line-height: 22px;
 	}
 }
 
