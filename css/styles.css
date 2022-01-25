@@ -1075,6 +1075,20 @@ div {
 	}
 }
 
+@media screen and (max-width: 500px) {
+	.footer_block {
+		margin-bottom: 30px;
+	}
+
+	.block_name {
+		margin-bottom: 10px;
+	}
+
+	.block-list_item {
+		margin-bottom: 2px;
+	}
+}
+
 /* ANYWHERE */
 
 .font-maxbold {

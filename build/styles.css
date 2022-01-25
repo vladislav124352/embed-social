@@ -1105,9 +1105,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pt-\[35px\]{
   padding-top: 35px;
 }
-.pb-\[178px\]{
-  padding-bottom: 178px;
-}
 .text-left{
   text-align: left;
 }
@@ -2339,6 +2336,20 @@ div {
 	}
 }
 
+@media screen and (max-width: 500px) {
+	.footer_block {
+		margin-bottom: 30px;
+	}
+
+	.block_name {
+		margin-bottom: 10px;
+	}
+
+	.block-list_item {
+		margin-bottom: 2px;
+	}
+}
+
 /* ANYWHERE */
 
 .font-maxbold {
@@ -2800,6 +2811,10 @@ div {
     padding-bottom: 150px;
   }
 
+  .\32xs\:pb-\[178px\]{
+    padding-bottom: 178px;
+  }
+
   .\32xs\:text-\[20px\]{
     font-size: 20px;
   }
@@ -2995,12 +3010,12 @@ div {
     margin-bottom: 30px;
   }
 
-  .\33md\:mb-0{
-    margin-bottom: 0px;
-  }
-
   .\33md\:mr-\[80px\]{
     margin-right: 80px;
+  }
+
+  .\33md\:mb-0{
+    margin-bottom: 0px;
   }
 
   .\33md\:flex{
