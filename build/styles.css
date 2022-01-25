@@ -796,6 +796,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-\[608px\]{
   max-width: 608px;
 }
+.max-w-\[300px\]{
+  max-width: 300px;
+}
 .max-w-\[830px\]{
   max-width: 830px;
 }
@@ -1087,11 +1090,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pb-\[80px\]{
   padding-bottom: 80px;
 }
-.pt-\[75px\]{
-  padding-top: 75px;
-}
-.pb-\[150px\]{
-  padding-bottom: 150px;
+.pb-\[100px\]{
+  padding-bottom: 100px;
 }
 .pt-\[35px\]{
   padding-top: 35px;
@@ -1176,6 +1176,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .leading-\[36px\]{
   line-height: 36px;
+}
+.leading-\[18px\]{
+  line-height: 18px;
 }
 .leading-\[28px\]{
   line-height: 28px;
@@ -1974,7 +1977,7 @@ div {
 
 /* SECTION: SOCIAL PROOFS REVIEWS */
 
-.proofs_review {
+.proofs-review {
 	max-width: 310px;
 	min-height: 382px;
 	width: 100%;
@@ -1988,73 +1991,104 @@ div {
 	justify-content: space-between;
 }
 
-.review_info {
+.proofs-review_info {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
 }
 
-.review_info .review_avatar {
+.review-info_avatar {
 	margin-bottom: 15px;
 	width: 75px;
 	height: 75px;
 	border-radius: 13px;
 }
 
-.review_info .review_username {
+.review-info_username {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 21px;
 	margin-bottom: 15px;
 }
 
-.review_info .review_comment {
+.review-info_comment {
 	font-size: 16px;
 	line-height: 25px;
 	font-weight: 400;
 	margin-bottom: 50px;
 }
 
-.review_info .proof_rating {
+.review-info_rating {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	margin-bottom: 15px;
 }
 
-.rating_star {
+.rating-star {
 	margin-right: 5px;
 }
 
-.rating_star:last-child {
+.rating-star:last-child {
 	margin: 0;
 }
 
-.review_google {
+.proofs-review_google {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 }
 
-.review_google svg {
+.proofs-review_google svg {
 	margin-right: 10px;
 }
 
-.review_google p {
+.proofs-review_google p {
 	color: #9ca0ac;
 	font-size: 12px;
 	line-height: 14px;
 	font-weight: 400;
 }
 
-@media screen and (max-width: 500px) {
-	.proofs_review {
+@media screen and (max-width: 600px) {
+	.proofs-review {
 		max-width: 100%;
+		min-height: auto;
 	}
 
-	.review_info {
+	.proofs-review_info {
 		max-width: 320px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.proofs-review {
+		padding: 20px;
+	}
+
+	.review-info_avatar {
+		margin-bottom: 10px;
+		width: 60px;
+		height: 60px;
+	}
+
+	.review-info_username {
+		margin-bottom: 5px;
+	}
+
+	.review-info_comment {
+		font-size: 15px;
+		line-height: 20px;
+		margin-bottom: 30px;
+	}
+
+	.rating-star {
+		margin-right: 2px;
+	}
+
+	.rating-star svg {
+		width: 18px;
 	}
 }
 
@@ -2514,6 +2548,10 @@ div {
     max-width: fit-content;
   }
 
+  .xs\:max-w-full{
+    max-width: 100%;
+  }
+
   .xs\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2562,6 +2600,14 @@ div {
     padding-bottom: 75px;
   }
 
+  .xs\:pt-\[75px\]{
+    padding-top: 75px;
+  }
+
+  .xs\:pb-\[120px\]{
+    padding-bottom: 120px;
+  }
+
   .xs\:text-center{
     text-align: center;
   }
@@ -2589,6 +2635,10 @@ div {
   .xs\:leading-\[36px\]{
     line-height: 36px;
   }
+
+  .xs\:leading-\[21px\]{
+    line-height: 21px;
+  }
 }
 
 @media (min-width: 600px){
@@ -2611,6 +2661,10 @@ div {
 
   .\32xs\:mt-\[50px\]{
     margin-top: 50px;
+  }
+
+  .\32xs\:w-auto{
+    width: auto;
   }
 
   .\32xs\:max-w-\[500px\]{
@@ -2648,12 +2702,24 @@ div {
     padding-bottom: 100px;
   }
 
+  .\32xs\:pt-\[100px\]{
+    padding-top: 100px;
+  }
+
+  .\32xs\:pb-\[150px\]{
+    padding-bottom: 150px;
+  }
+
   .\32xs\:text-\[20px\]{
     font-size: 20px;
   }
 
   .\32xs\:text-\[40px\]{
     font-size: 40px;
+  }
+
+  .\32xs\:text-\[18px\]{
+    font-size: 18px;
   }
 
   .\32xs\:leading-\[42px\]{
