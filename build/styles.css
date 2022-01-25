@@ -617,8 +617,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ml-\[-44px\]{
   margin-left: -44px;
 }
-.mb-\[150px\]{
-  margin-bottom: 150px;
+.mb-\[80px\]{
+  margin-bottom: 80px;
 }
 .mr-\[50px\]{
   margin-right: 50px;
@@ -628,9 +628,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mr-\[80px\]{
   margin-right: 80px;
-}
-.mb-\[80px\]{
-  margin-bottom: 80px;
 }
 .box-content{
   box-sizing: content-box;
@@ -1087,12 +1084,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pb-\[80px\]{
   padding-bottom: 80px;
 }
-.pt-\[100px\]{
-  padding-top: 100px;
-}
-.pb-\[75px\]{
-  padding-bottom: 75px;
-}
 .pt-\[75px\]{
   padding-top: 75px;
 }
@@ -1132,14 +1123,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[12\.5px\]{
   font-size: 12.5px;
 }
-.text-\[36px\]{
-  font-size: 36px;
+.text-\[28px\]{
+  font-size: 28px;
 }
 .text-\[21px\]{
   font-size: 21px;
 }
 .text-\[40px\]{
   font-size: 40px;
+}
+.text-\[36px\]{
+  font-size: 36px;
 }
 .font-bold{
   font-weight: 700;
@@ -1170,9 +1164,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .leading-\[16px\]{
   line-height: 16px;
-}
-.leading-\[50px\]{
-  line-height: 50px;
 }
 .leading-\[26px\]{
   line-height: 26px;
@@ -2243,7 +2234,7 @@ div {
 	font-variant-caps: small-caps;
 }
 
-.markable {
+.marketable {
 	padding: 0 5px;
 }
 
@@ -2280,6 +2271,7 @@ div {
 
 .check svg {
 	margin-right: 10px;
+	min-width: 17px;
 }
 
 .text-description {
@@ -2340,41 +2332,41 @@ div {
 
 @media screen and (max-width: 1100px) {
 	.title {
-		font-size: 50px;
+		font-size: 46px;
 	}
 
 	.title-md {
-		font-size: 42px;
+		font-size: 40px;
 	}
 
 	.title-small {
-		font-size: 42px;
+		font-size: 40px;
 	}
 
 	.title-large {
-		font-size: 50px;
+		font-size: 46px;
 	}
 }
 
 @media screen and (max-width: 700px) {
 	.title {
-		font-size: 46px;
-		line-height: 54px;
+		font-size: 42px;
+		line-height: 50px;
 	}
 
 	.title-md {
-		font-size: 38px;
-		line-height: 44px;
+		font-size: 36px;
+		line-height: 40px;
 	}
 
 	.title-small {
-		font-size: 38px;
-		line-height: 44px;
+		font-size: 36px;
+		line-height: 40px;
 	}
 
 	.title-large {
-		font-size: 46px;
-		line-height: 54px;
+		font-size: 42px;
+		line-height: 50px;
 	}
 }
 
@@ -2456,6 +2448,14 @@ div {
     margin-bottom: 50px;
   }
 
+  .xs\:mb-\[100px\]{
+    margin-bottom: 100px;
+  }
+
+  .xs\:mb-\[15px\]{
+    margin-bottom: 15px;
+  }
+
   .xs\:h-\[42px\]{
     height: 42px;
   }
@@ -2515,6 +2515,14 @@ div {
     padding-bottom: 55px;
   }
 
+  .xs\:pt-\[100px\]{
+    padding-top: 100px;
+  }
+
+  .xs\:pb-\[75px\]{
+    padding-bottom: 75px;
+  }
+
   .xs\:text-center{
     text-align: center;
   }
@@ -2527,12 +2535,16 @@ div {
     font-size: 18px;
   }
 
-  .xs\:text-\[42px\]{
-    font-size: 42px;
+  .xs\:text-\[32px\]{
+    font-size: 32px;
   }
 
   .xs\:text-\[20px\]{
     font-size: 20px;
+  }
+
+  .xs\:leading-\[35px\]{
+    line-height: 35px;
   }
 }
 
@@ -2595,6 +2607,14 @@ div {
 
   .\32xs\:text-\[20px\]{
     font-size: 20px;
+  }
+
+  .\32xs\:text-\[40px\]{
+    font-size: 40px;
+  }
+
+  .\32xs\:leading-\[42px\]{
+    line-height: 42px;
   }
 }
 
@@ -2673,20 +2693,12 @@ div {
     font-size: 20px;
   }
 
-  .\33xs\:text-\[52px\]{
-    font-size: 52px;
-  }
-
   .\33xs\:text-\[46px\]{
     font-size: 46px;
   }
 
   .\33xs\:text-\[24px\]{
     font-size: 24px;
-  }
-
-  .\33xs\:leading-\[65px\]{
-    line-height: 65px;
   }
 
   .\33xs\:leading-\[56px\]{
@@ -2711,6 +2723,14 @@ div {
   .md\:py-\[150px\]{
     padding-top: 150px;
     padding-bottom: 150px;
+  }
+
+  .md\:text-\[52px\]{
+    font-size: 52px;
+  }
+
+  .md\:leading-\[65px\]{
+    line-height: 65px;
   }
 }
 
