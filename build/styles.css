@@ -548,6 +548,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 5px;
   margin-right: 5px;
 }
+.mx-\[20px\]{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .mr-\[10px\]{
   margin-right: 10px;
 }
@@ -801,6 +805,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .max-w-\[350px\]{
   max-width: 350px;
+}
+.max-w-\[950px\]{
+  max-width: 950px;
 }
 .max-w-\[830px\]{
   max-width: 830px;
