@@ -11,7 +11,7 @@ export const getFeatures1AnimatedElements = () => {
         { id: '#features-1-badge_2', options: { duration: 500, origin: 'bottom', distance: '20px' } },
         { id: '#features-1-title_2', options: { duration: 550, origin: 'bottom', distance: '20px' } },
         { id: '#features-1-description_2', options: { duration: 600, origin: 'bottom', distance: '20px' } },
-        { id: '.feature-check', options: { duration: 650, origin: 'bottom', distance: '20px' } },
+        { id: '.features-check', options: { duration: 650, origin: 'bottom', distance: '20px' } },
         { id: '#features-1-image_2', options: { duration: 700, origin: 'bottom', distance: '20px' } },
     ]
 

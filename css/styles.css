@@ -574,14 +574,14 @@ div {
 	line-height: 16px;
 }
 
-.feature-check {
+.features-check {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	margin-right: 40px;
 }
 
-.feature-check svg {
+.features-check svg {
 	margin-right: 10px;
 	min-width: 17px;
 }
