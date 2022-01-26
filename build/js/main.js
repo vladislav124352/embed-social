@@ -7,6 +7,7 @@ import { getFeatures1AnimatedElements } from './sections/features-1/getFeatures1
 import { getFeatures2AnimatedElements } from './sections/features-2/getFeatures2AnimatedElements.js';
 import { getFeatures3AnimatedElements } from './sections/features-3/getFeatures3AnimatedElements.js';
 import { getPricingAnimatedElements } from './sections/pricing/getPricinigAnimatedElements.js';
+import { getSocialProofAnimatedElements } from './sections/social-proof/getSocialProofAnimatedElements.js';
 import PageSection from './pageSection.js';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 new PageSection(getFeatures2AnimatedElements),
                 new PageSection(getFeatures3AnimatedElements),
                 new PageSection(getPricingAnimatedElements),
+                new PageSection(getSocialProofAnimatedElements),
             ]
         }
 
