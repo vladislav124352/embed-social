@@ -1270,13 +1270,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-div {
-	width: -webkit-fit-content;
-	width: -moz-fit-content;
-	width: fit-content;
-	width: -moz-available;
-}
-
 /* CONTAINERS */
 
 .container {
@@ -2513,6 +2506,9 @@ div {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
+	width: max-content;
+	width: -webkit-max-content;
+	width: -moz-max-content;
 }
 
 .badge svg {

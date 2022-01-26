@@ -6,11 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-div {
-	width: fit-content;
-	width: -moz-available;
-}
-
 /* CONTAINERS */
 
 .container {
@@ -1208,6 +1203,9 @@ div {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
+	width: max-content;
+	width: -webkit-max-content;
+	width: -moz-max-content;
 }
 
 .badge svg {
