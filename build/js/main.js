@@ -5,8 +5,9 @@ import { getBenefits1AnimatedElements } from './sections/benefits-1/getBenefits1
 import { getBenefits2AnimatedElements } from './sections/benefits-2/getbenefits2AnimatedElements.js';
 import { getFeatures1AnimatedElements } from './sections/features-1/getFeatures1AnimatedElements.js';
 import { getFeatures2AnimatedElements } from './sections/features-2/getFeatures2AnimatedElements.js';
-import PageSection from './pageSection.js';
 import { getFeatures3AnimatedElements } from './sections/features-3/getFeatures3AnimatedElements.js';
+import { getPricingAnimatedElements } from './sections/pricing/getPricinigAnimatedElements.js';
+import PageSection from './pageSection.js';
 
 window.addEventListener('DOMContentLoaded', () => {
     class App {
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 new PageSection(getFeatures1AnimatedElements),
                 new PageSection(getFeatures2AnimatedElements),
                 new PageSection(getFeatures3AnimatedElements),
+                new PageSection(getPricingAnimatedElements),
             ]
         }
 

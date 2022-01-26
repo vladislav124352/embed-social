@@ -2341,23 +2341,23 @@ div {
 	margin-bottom: 2px;
 }
 
-.pricing_question {
+.pricing-question {
 	width: 100%;
 	margin-bottom: 20px;
 }
 
-.pricing_question details {
+.pricing-question details {
 	transition: all 100ms ease-in-out;
 	border-bottom: 2px solid #d6dae4;
 	padding-bottom: 20px;
 }
 
-.pricing_question details[open] > summary > svg {
+.pricing-question details[open] > summary > svg {
 	transition: all 100ms ease-in-out;
 	transform: rotate(180deg);
 }
 
-.pricing_question details summary {
+.pricing-question details summary {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
