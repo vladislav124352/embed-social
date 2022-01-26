@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+img {
+	user-select: none;
+}
+
 /* CONTAINERS */
 
 .container {
@@ -178,10 +182,6 @@
 	background-color: #0066ff15;
 }
 
-.about-widget_item_active .rect_active {
-	fill: #0066ff;
-}
-
 @media screen and (max-width: 1400px) {
 	.about-widget_item {
 		max-width: 100%;
@@ -338,6 +338,10 @@
 	align-items: center;
 	justify-content: flex-start;
 	margin-bottom: 10px;
+}
+
+.advantage-iconBlock_icon {
+	margin-right: 10px;
 }
 
 .advantage-iconBlock_text {
@@ -576,7 +580,7 @@
 	margin-right: 40px;
 }
 
-.features-check svg {
+.features-check img {
 	margin-right: 10px;
 	min-width: 17px;
 }
@@ -683,7 +687,7 @@
 	margin-bottom: 30px;
 }
 
-.features-2-check svg {
+.features-2-check img {
 	min-width: 17px;
 	margin-right: 10px;
 }
@@ -719,7 +723,7 @@
 	padding: 22px;
 }
 
-.feature-card svg {
+.feature-card img {
 	margin-bottom: 20px;
 }
 
@@ -738,7 +742,7 @@
 		min-height: auto;
 	}
 
-	.feature-card svg {
+	.feature-card img {
 		margin-bottom: 10px;
 		width: 40px;
 	}
@@ -860,7 +864,9 @@
 	justify-content: flex-start;
 }
 
-.proofs-review_google svg {
+.proofs-review_google img {
+	max-width: 17px;
+	width: 100%;
 	margin-right: 10px;
 }
 
@@ -907,7 +913,7 @@
 		margin-right: 2px;
 	}
 
-	.rating-star svg {
+	.rating-star img {
 		width: 18px;
 	}
 }
@@ -985,7 +991,16 @@
 	margin-bottom: 10px;
 }
 
-.price-card_check svg {
+.price-card_check-through > p {
+	text-decoration: line-through;
+	color: #00000069;
+}
+
+.price-card_check-through > img > svg {
+	fill: #00000069;
+}
+
+.price-card_check img {
 	margin-right: 10px;
 	min-width: 17px;
 }
@@ -1039,7 +1054,7 @@
 	padding-bottom: 20px;
 }
 
-.pricing-question details[open] > summary > svg {
+.pricing-question details[open] > summary > img {
 	transition: all 100ms ease-in-out;
 	transform: rotate(180deg);
 }
@@ -1208,7 +1223,7 @@
 	width: -moz-max-content;
 }
 
-.badge svg {
+.badge img {
 	margin-right: 10px;
 }
 
@@ -1218,7 +1233,7 @@
 	justify-content: flex-start;
 }
 
-.check svg {
+.check img {
 	margin-right: 10px;
 	min-width: 17px;
 }
