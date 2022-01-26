@@ -679,6 +679,36 @@ div {
 	justify-content: center;
 }
 
+/* SECTION: FEATURES 2 */
+
+.features-2-check {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 30px;
+}
+
+.features-2-check svg {
+	min-width: 17px;
+	margin-right: 10px;
+}
+
+.features-2-check:last-child {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+	.features-2-check {
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.features-2-check {
+		margin-bottom: 5px;
+	}
+}
+
 /* SECTION: FEATURE 3 */
 
 .feature-card {

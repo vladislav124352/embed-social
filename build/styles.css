@@ -1987,6 +1987,36 @@ div {
 	justify-content: center;
 }
 
+/* SECTION: FEATURES 2 */
+
+.features-2-check {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 30px;
+}
+
+.features-2-check svg {
+	min-width: 17px;
+	margin-right: 10px;
+}
+
+.features-2-check:last-child {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+	.features-2-check {
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.features-2-check {
+		margin-bottom: 5px;
+	}
+}
+
 /* SECTION: FEATURE 3 */
 
 .feature-card {
@@ -2686,12 +2716,12 @@ div {
     margin-bottom: 100px;
   }
 
-  .xs\:mb-\[15px\]{
-    margin-bottom: 15px;
-  }
-
   .xs\:mb-\[30px\]{
     margin-bottom: 30px;
+  }
+
+  .xs\:mb-\[15px\]{
+    margin-bottom: 15px;
   }
 
   .xs\:h-\[40px\]{
@@ -3118,16 +3148,16 @@ div {
     margin-bottom: 200px;
   }
 
-  .\33md\:mb-\[30px\]{
-    margin-bottom: 30px;
-  }
-
   .\33md\:mr-\[80px\]{
     margin-right: 80px;
   }
 
   .\33md\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .\33md\:mb-\[30px\]{
+    margin-bottom: 30px;
   }
 
   .\33md\:flex{
