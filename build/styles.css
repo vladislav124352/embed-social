@@ -612,9 +612,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-\[60px\]{
   margin-bottom: 60px;
 }
-.mr-\[40px\]{
-  margin-right: 40px;
-}
 .mb-\[32px\]{
   margin-bottom: 32px;
 }
@@ -1885,6 +1882,18 @@ div {
 	line-height: 16px;
 }
 
+.feature-check {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-right: 40px;
+}
+
+.feature-check svg {
+	margin-right: 10px;
+	min-width: 17px;
+}
+
 .platform {
 	display: flex;
 	align-items: center;
@@ -1925,6 +1934,12 @@ div {
 
 	.feature-tag:last-child {
 		margin: 5px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.features-check {
+		margin-right: 0;
 	}
 }
 

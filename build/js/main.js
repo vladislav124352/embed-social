@@ -3,6 +3,7 @@ import { getAboutAnimatedElements } from './sections/about/getAboutAnimatedEleme
 import { setHeaderAnimations } from './sections/header/setHeaderAnimations.js';
 import { getBenefits1AnimatedElements } from './sections/benefits-1/getBenefits1AnimatedElements.js';
 import { getBenefits2AnimatedElements } from './sections/benefits-2/getbenefits2AnimatedElements.js';
+import { getFeatures1AnimatedElements } from './sections/features-1/getFeatures1AnimatedElements.js';
 import PageSection from './pageSection.js';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -15,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 new PageSection(getAboutAnimatedElements),
                 new PageSection(getBenefits1AnimatedElements),
                 new PageSection(getBenefits2AnimatedElements),
+                new PageSection(getFeatures1AnimatedElements),
             ]
         }
 
