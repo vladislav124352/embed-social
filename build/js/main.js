@@ -1,6 +1,7 @@
 import { getHeroAnimatedElements } from './sections/hero/getHeroAnimatedElements.js';
 import { getAboutAnimatedElements } from './sections/about/getAboutAnimatedElements.js';
 import { setHeaderAnimations } from './sections/header/setHeaderAnimations.js';
+import { getBenefits1AnimatedElements } from './sections/benefits-1/getBenefits1AnimatedElements.js';
 import PageSection from './pageSection.js';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -11,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
             this.#appSections = [
                 new PageSection(getHeroAnimatedElements),
                 new PageSection(getAboutAnimatedElements),
+                new PageSection(getBenefits1AnimatedElements),
             ]
         }
 
