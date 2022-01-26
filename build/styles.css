@@ -755,6 +755,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-\[600px\]{
   max-width: 600px;
 }
+.max-w-\[900px\]{
+  max-width: 900px;
+}
 .max-w-\[781px\]{
   max-width: 781px;
 }
@@ -1446,6 +1449,7 @@ div {
 
 .about-widget_item {
 	max-width: 320px;
+	width: 100%;
 	margin-bottom: 10px;
 	height: 70px;
 	color: #9ca0ac;
@@ -1492,6 +1496,7 @@ div {
 
 @media screen and (max-width: 1400px) {
 	.about-widget_item {
+		max-width: 100%;
 		margin: 5px;
 	}
 
@@ -1522,11 +1527,6 @@ div {
 }
 
 @media screen and (max-width: 700px) {
-	.about-widget_item {
-		max-width: 100%;
-		width: 100%;
-	}
-
 	.widget-item_btn {
 		font-size: 15px;
 		width: 100%;
@@ -2979,10 +2979,6 @@ div {
     max-width: 580px;
   }
 
-  .\33xs\:flex-row{
-    flex-direction: row;
-  }
-
   .\33xs\:flex-wrap{
     flex-wrap: wrap;
   }
@@ -3296,12 +3292,12 @@ div {
     margin-bottom: 0px;
   }
 
-  .xl\:flex-row{
-    flex-direction: row;
+  .xl\:w-auto{
+    width: auto;
   }
 
-  .xl\:flex-col{
-    flex-direction: column;
+  .xl\:flex-row{
+    flex-direction: row;
   }
 
   .xl\:items-start{

@@ -142,6 +142,7 @@ div {
 
 .about-widget_item {
 	max-width: 320px;
+	width: 100%;
 	margin-bottom: 10px;
 	height: 70px;
 	color: #9ca0ac;
@@ -188,6 +189,7 @@ div {
 
 @media screen and (max-width: 1400px) {
 	.about-widget_item {
+		max-width: 100%;
 		margin: 5px;
 	}
 
@@ -218,11 +220,6 @@ div {
 }
 
 @media screen and (max-width: 700px) {
-	.about-widget_item {
-		max-width: 100%;
-		width: 100%;
-	}
-
 	.widget-item_btn {
 		font-size: 15px;
 		width: 100%;
