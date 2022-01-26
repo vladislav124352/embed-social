@@ -6,6 +6,7 @@ import { getBenefits2AnimatedElements } from './sections/benefits-2/getbenefits2
 import { getFeatures1AnimatedElements } from './sections/features-1/getFeatures1AnimatedElements.js';
 import { getFeatures2AnimatedElements } from './sections/features-2/getFeatures2AnimatedElements.js';
 import PageSection from './pageSection.js';
+import { getFeatures3AnimatedElements } from './sections/features-3/getFeatures3AnimatedElements.js';
 
 window.addEventListener('DOMContentLoaded', () => {
     class App {
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 new PageSection(getBenefits2AnimatedElements),
                 new PageSection(getFeatures1AnimatedElements),
                 new PageSection(getFeatures2AnimatedElements),
+                new PageSection(getFeatures3AnimatedElements),
             ]
         }
 
