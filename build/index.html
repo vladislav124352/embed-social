@@ -16,7 +16,7 @@
     <main class="overflow-x-clip">
         <header id="header" class="w-full bg-white shadow-[0_0_20px_#00000010] py-[10px]">
             <div class="container-center justify-between">
-                <div class="flex items-center relative p-[2px]">
+                <div class="flex items-center relative">
                     <img class="mr-[10px] w-[35px] h-[35px] xs:w-[40px] xs:h-[40px]"
                         src="./assets/embed-social-logo-black.svg" alt="EmbedSocial logo">
                     <p class="text-[18px] font-maxbold">embedsocial</p>
@@ -57,10 +57,11 @@
                     <button class="py-[12px] px-[20px] h-[50px] rounded-[2px]" aria-label="Go to login">Login</button>
                     <button class="btn-blue" aria-label="Go to start free trial">Start Free Trial</button>
                 </div>
-                <button class="flex flex-col items-center justify-center 2md:hidden" aria-label="Open menu">
+                <button id="header-menu-button" class="flex flex-col items-center justify-center 2md:hidden"
+                    aria-label="Open menu">
                     <div class="w-[30px] xs:w-[32px] h-[4px] mb-[3px] xs:mb-[5px] rounded-[4px] bg-black/80"></div>
                     <div class="w-[30px] xs:w-[32px] h-[4px] mb-[3px] xs:mb-[5px] rounded-[4px] bg-black/80"></div>
-                    <div class="w-[30px] xs:w-[32px] h-[4px] mb-[3px] xs:mb-[5px] rounded-[4px] bg-black/80"></div>
+                    <div class="w-[30px] xs:w-[32px] h-[4px] rounded-[4px] bg-black/80"></div>
                 </button>
             </div>
         </header>
@@ -1697,6 +1698,32 @@
                 </ul>
             </div>
         </section>
+        <div id="header-menu" class="header-menu header-menu-hidden">
+            <ul class="grid grid-cols-2 grid-rows-2 gap-[5px]">
+                <li>
+                    <a class="header-menu_link" rel="noreferrer" aria-label="go to the integrations section"
+                        href="#integrations">
+                        Platforms
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu_link" rel="noreferrer" aria-label="go to the about section" href="#about">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu_link" rel="noreferrer" aria-label="go to the templates section"
+                        href="#templates">
+                        Templates
+                    </a>
+                </li>
+                <li>
+                    <a class="header-menu_link" rel="noreferrer" aria-label="go to the pricing section" href="#pricing">
+                        Pricing
+                    </a>
+                </li>
+            </ul>
+        </div>
     </main>
 </body>
 

@@ -1,6 +1,5 @@
 import { getHeroAnimatedElements } from './sections/hero/getHeroAnimatedElements.js';
 import { getAboutAnimatedElements } from './sections/about/getAboutAnimatedElements.js';
-import { setHeaderAnimations } from './sections/header/setHeaderAnimations.js';
 import { getBenefits1AnimatedElements } from './sections/benefits-1/getBenefits1AnimatedElements.js';
 import { getBenefits2AnimatedElements } from './sections/benefits-2/getbenefits2AnimatedElements.js';
 import { getFeatures1AnimatedElements } from './sections/features-1/getFeatures1AnimatedElements.js';
@@ -8,6 +7,7 @@ import { getFeatures2AnimatedElements } from './sections/features-2/getFeatures2
 import { getFeatures3AnimatedElements } from './sections/features-3/getFeatures3AnimatedElements.js';
 import { getPricingAnimatedElements } from './sections/pricing/getPricinigAnimatedElements.js';
 import { getSocialProofAnimatedElements } from './sections/social-proof/getSocialProofAnimatedElements.js';
+import { setHeaderAnimations } from './sections/header/setHeaderAnimations.js';
 import PageSection from './pageSection.js';
 
 window.addEventListener('DOMContentLoaded', () => {
