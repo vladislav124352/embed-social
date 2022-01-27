@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "postcss css/styles.css -o build/styles.css",
+    "start": "npm run watch:windows",
     "watch:windows": "watch \"npm run build\" ./build ./css"
   },
   "keywords": [],
